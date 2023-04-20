@@ -1,0 +1,313 @@
+
+
+body{
+  overflow:scroll;
+}
+
+.main{
+  display:inline-block;
+  position:absolute;
+  width:80%;
+}
+
+.sidebar{
+  display:inline-block;
+  position:relative;
+}
+
+h1{
+    display:block;
+    text-align: center;
+    font: size 1.0em;
+    color:#92A8D1;
+    background-color: bisque;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:20px;
+    border:solid 3px;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+
+h2{
+  text-align:center;
+  color:#92A8D1;
+}
+  
+#about_us{
+    display:block;
+    color:#92A8D1;
+    text-align: center;
+  }
+
+#Members ul{
+    display:flex;
+    flex-direction: column;
+    font: size 1.0em;
+    color:#92A8D1;
+    background-color: #92A8D1;
+    margin-left: 40%;
+    margin-right:40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:15px;
+    border:solid 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#Members li{
+    color:grey;
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+  }
+
+p{
+  display:block;
+  background-color:bisque;
+  color:grey;
+  text-align:center;
+  font: size 50pt;
+  font-weight: bold;
+  border:solid 3px;
+  border-color:#92A8D1;
+  padding: 40px 50px 40px 50px;
+  margin:20px 250px 20px 250px;
+  border-radius:50%;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:50%;
+  height:50%;
+}
+
+alt{
+  color:white;
+  text-align: auto;
+  background-color: #92A8D1;
+  border:solid 3px
+  padding:20px;
+}
+
+#monthly_blog_photo{
+height: auto;
+border:solid grey;
+border-radius:30px;
+}
+
+.flex-right
+{ display:flexbox;
+  flex-direction:row;
+  font-size:14px;
+  color:grey;
+  padding:10px;
+}
+
+.text{
+  text-decoration: none;
+  color:bisque;
+  font-weight: b;
+  font-size: 1.25rem;
+}
+
+ul {
+    list-style-type:none;
+  }
+
+a{
+  color:white;
+  text-decoration: none;
+  -moz-text-decoration: none; 
+}
+
+a link{
+  color:white;
+  text-decoration: none;
+  -moz-text-decoration: none;
+}
+
+a visited{
+  color:#92A8D1;
+  text-decoration: none;
+  -moz-text-decoration: none;
+}
+
+a:hover{
+  color:navy;
+  text-decoration: none;
+  -moz-text-decoration: none; 
+}
+
+a:active {
+  background-color: paleturquoise;
+}
+
+#myDiv{
+  width: 150px;
+  height: 100%;
+  visibility:hidden;
+}
+
+#myDiv li{
+  padding:5px;
+  background-color: grey;
+  font-weight: bold;
+}
+
+ #button{
+  display:inline-block;
+  height:50px;
+  width: 100px;
+  background-color:#92A8D1;
+  border:gray 2px solid;
+  border-radius:15%;;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:white;
+  margin: 10px;
+  -webkit-border-radius:15%;
+  -moz-border-radius:15%;
+  -ms-border-radius:15%;
+  -o-border-radius:15%;
+} 
+
+.profile{
+  /* background-color:midnightblue; */
+  display:flex;
+  flex-direction:row;
+}
+
+.Profession{
+  background-color: steelblue;
+  color:white;
+  display:inline-block;
+  position:center;
+  /* margin-right: 47%;
+  margin-left:47%; */
+  margin-top:20px;
+  margin-bottom: 20px;
+  padding:20px;
+  text-align:center;
+}
+
+.Likes, .Dislikes, .FavouriteBooks, .FavouriteMusic{
+  background-color: steelblue;
+  color:white;
+  display:inline-block;
+  margin:20px;
+  padding:20px;
+  text-align:center;
+  list-style-type: none;
+}
+
+.Surprisingfacts{
+  background-color: steelblue;
+  color:white;
+  display:inline-block;
+  margin-right:40%;
+  margin-top:20px;
+  margin-left:40%;
+  padding:20px;
+  list-style-type: none;
+  text-align:center;
+}
+
+.Likes li, .Dislikes li, .Surprisingfacts li, .FavouriteBooks li, .FavouriteMusic li{
+  padding:10px;
+}
+
+figcaption{
+  text-align: center;
+  font-family: bold;
+  color:white;
+}
+
+#Thomas_family_photo{
+  height:50%;
+  width:50%;
+  border:solid #6B5B95 3px;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+#Bernard_profile_photo, #Jill_profile_photo, #Elena_profile_photo, #Harry_profile_photo{
+  position:center;
+  height: 25%;
+  width:25%;
+  border:solid grey 3px;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}
+
+article{
+  color:white;
+  display:inline-block;
+  text-align: center;
+  background-color: steelblue;
+  padding:20px;
+}
+
+.navy{
+  background-color: navy;
+}
+
+.midnightblue{
+  background-color: midnightblue;
+}
+
+.AquamarineBlue{
+  background-color: #7FFFD4;
+}
+
+.blogDiv{
+  border:solid #757c88 4px;
+  background-color:#48AAAD;
+}
+
+.date, .news{
+  color:white;
+  border:solid 3px #757c88;
+  background-color:#0492c2;
+  text-align: center;
+  padding:10px 10px 2px 10px;
+  margin:10px
+}
+
+.datenewsDiv{
+  display:flex;
+  flex-direction: row;
+}
+
+.blogPhotoDiv{
+  display:flex;
+  flex-direction: row;
+}
+
+.blogPhoto{
+  height:250px;
+  width:250px;
+}
+

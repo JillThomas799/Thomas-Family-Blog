@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thomas Family Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body style="background-color:#48AAAD">
+    <div class="sidebar">
+        <button id="button" title = "Click here to open dropdown menu" onclick="myFunction()">Menu</button>
+        <div id="myDiv">
+          <nav class="navbar">
+                <ul>
+                    <li><a class = "About-us" href = "#about_us" title = "Click here to find out more about us "><span class="text">About us</span></a></li>
+                    <li><a class="Members" href = "#Members" title = "Click here to go to find out more about the individual family members"><Members class="text">Members</span></a></li>
+                    <li><a class="text" href = "#menu">Choose month:</a></li>
+                        <div class="Months">
+                            <li><a class="nav-link" href = "April_2023.html" id="menu" title = "Click here to go to April 2023 blogs">April 2023</a></li>
+                            <li><a class="nav-link" href = "May_2023.html" id="menu" title = "Click here to go to May 2023 blogs">May 2023</a></li>
+                            <li><a class="nav-link" href = "June_2023.html" id="menu" title = "Click here to go to June 2023 blogs">June 2023</a></li>
+                            <li><a class="nav-link" href = "July_2023.html" id="menu" title = "Click here to go to July 2023 blogs">July 2023</a></li>
+                            <li><a class="nav-link" href = "August_2023.html" id="menu" title = "Click here to go to August 2023 blogs">August 2023</a></li>
+                            <li><a class="nav-link" href = "September_2023.html" id="menu" title = "Click here to go to September 2023 blogs">September 2023</a></li>
+                            <li><a class="nav-link" href = "October_2023.html" id="menu" title = "Click here to go to October 2023 blogs">October 2023</a></li>
+                            <li><a class="nav-link" href = "November_2023.html" id="menu" title = "Click here to go to November 2023 blogs">November 2023</a></li>
+                            <li><a class="nav-link" href = "December_2023.html" id="menu" title = "Click here to go to December 2023 blogs">December 2023</a></li>
+                        </div>
+                </ul>      
+            </nav>
+        </div>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myDiv");
+            if (x.style.visibility === 'hidden') {
+                x.style.visibility = 'visible';
+            } else {
+                x.style.visibility = 'hidden';
+            }
+            }        
+        </script>
+    </div>
+
+    <div class="main">
+        <main>
+            <h1 id="The_Thomas_Family_Blog">Thomas Family Blog</h1>
+            <fig>
+            <img id="Thomas_family_photo" src="resources\images\IMG_20230409_115147.jpg" alt="Photo of the Thomas family"></fig>
+            <h2 id="about_us">About us</h2>
+            <p>
+                We, the Thomas Family, are a family of 4 based in Northern Cumbria, quite close to the 
+                Scottish Border. 
+                We have started our blog to keep our family and friends up to date with our activities so hope 
+                everyone enjoys it. Any further suggestions for improvements are welcome.
+            </p>
+
+            <section id="Members">
+                <h2 id="Members"> Members </h2>
+                <ul>
+                    <li><a class="Member" href = "Bernard.html" id="Bernard" title="Click here to go to find out more about Bernard">Bernard</a></li>
+                    <li><a class="Member" href = "Jill.html" id="Jill" title="Click here to go to find out more about Jill">Jill</a></li>
+                    <li><a class="Member" href = "Elena.html" id="Elena" title="Click here to go to find out more about Elena">Elena</a></li>
+                    <li><a class="Member" href = "Harry.html" id="Harry" title="Click here to go to find out more about Harry">Harry</a></li>Harry</li>
+                    <li><a class="Member" href = "Lennie.html" id="Lennie" title="Click here to go to find out more about Lennie">Lennie</a></li>
+                </ul>
+        </main>
+
+</body>
+</html>
