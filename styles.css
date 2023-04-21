@@ -1,25 +1,30 @@
 
 
 body{
+  display:flex;
+  flex-direction:column;
   overflow:scroll;
 }
 
 /* .main{
-  display:inline-block;
+   display:inline-block;
   position:absolute;
-  width:80%;
-} */
-
+  width:80%; 
+  } */
 .main{
   display:flex;
   flex-direction:column;
-  width:100%;
-
+  flex:50%;
 }
 
-.sidebar{
+/* .sidebar{
   display:inline-block;
-  position:relative;
+  position:relative; */
+  
+.sidebar{
+  display:flex;
+  flex-direction:column;
+  flex:50%;
 }
 
 h1{
@@ -50,7 +55,7 @@ h2{
     display:block;
     color:#92A8D1;
     text-align: center;
-  }
+  } 
 
 #Members ul{
     display:flex;
@@ -68,7 +73,7 @@ h2{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    -o-border-radius: 50%; 
 }
 
 #Members li{
@@ -76,7 +81,7 @@ h2{
     list-style: none;
     font-weight: bold;
     text-align: center;
-  }
+}
 
 p{
   display:block;
@@ -90,7 +95,7 @@ p{
   padding: 40px 50px 40px 50px;
   margin:20px 250px 20px 250px;
   border-radius:50%;
-}
+} 
 
 img{
   display: block;
@@ -326,5 +331,22 @@ article{
     flex-direction: column;
   }
 }
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+     display:flex;
+     flex-direction:column;
+     flex:100%;
+   }
+
+   .main{
+    display:flex;
+    flex-direction:column;
+    flex:100%;
+  }
+}
+
 
 
