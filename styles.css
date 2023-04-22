@@ -6,12 +6,11 @@ body{
 
 h1{
     display:block;
-    text-align: center;
+    justify-content:center;
+    /*text-align: center;*/
     font: size 1.0em;
     color:white;
     background-color:#92A8D1;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding:10%;
     border:solid 3px;
     border-radius: 20%;
@@ -22,7 +21,6 @@ h1{
 }
 
 h2{
-  text-align:center;
   color:white;
 }
   
@@ -30,7 +28,7 @@ h2{
     display:block;
     color:white;
     text-align: center;
-  } 
+} 
 
 #Members ul{
     font: size 1.0em;
@@ -136,7 +134,14 @@ a:active {
   visibility:hidden;
 }
 
+#myDiv ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
 #myDiv li{
+  float:left;
   padding:5px;
   background-color: grey;
   font-weight: bold;
@@ -212,14 +217,14 @@ figcaption{
 }
 
 #Thomas_family_photo{
-  height:50%;
-  width:50%;
+  display:flex;
+  justify-content:center;
   border:solid #6B5B95 3px;
-  border-radius: 15%;
   -webkit-border-radius: 15%;
   -moz-border-radius: 15%;
   -ms-border-radius: 15%;
   -o-border-radius: 15%;
+  border-radius: 15%;
 }
 
 #Bernard_profile_photo, #Jill_profile_photo, #Elena_profile_photo, #Harry_profile_photo{
