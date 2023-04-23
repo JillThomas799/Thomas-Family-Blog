@@ -2,7 +2,6 @@ body{
   display:flex;
   flex-direction:column;
   overflow:scroll;
-  padding:5%;
 }
 
 h1{
