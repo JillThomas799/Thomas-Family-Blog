@@ -6,8 +6,8 @@ body{
 
 h1{
     display:block;
-    /* text-align: center; */
-    justify-content: center;
+    text-align: center;
+    /* justify-content: center; */
     font: size 1.0em;
     color:white;
     background-color:#92A8D1;
