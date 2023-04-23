@@ -4,9 +4,6 @@ Control Z is undo
 Control Y is redo
 Control S is save
 
-
-
-
 #navbar{
   display:inline-block;
   background-color:grey;
@@ -34,8 +31,6 @@ Control S is save
   margin:10px;
   text-decoration: none;
 }
-
-
 
 .date_style{
   background-color:antiquewhite;
