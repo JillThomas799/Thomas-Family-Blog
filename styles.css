@@ -6,8 +6,7 @@ body{
 
 h1{
     display:block;
-    justify-content:center;
-    /*text-align: center;*/
+    text-align: center;
     font: size 1.0em;
     color:white;
     background-color:#92A8D1;
@@ -21,7 +20,9 @@ h1{
 }
 
 h2{
+  display:block;
   color:white;
+  text-align: center;
 }
   
 #about_us{
@@ -132,6 +133,7 @@ a:active {
   list-style-type:none;
   margin:0;
   padding:0;
+  background-color: grey;
 }
 
 #myDiv li{
@@ -168,9 +170,11 @@ a:active {
 .Profession{
   background-color: steelblue;
   color:white;
-  display:inline-block;
-  position:center;
-  /* margin-right: 47%;
+  display:block;
+  text-align: center;
+  /*display:inline-block;*/
+  /*position:center;*/
+  /*margin-right: 47%;
   margin-left:47%; */
   margin-top:20px;
   margin-bottom: 20px;
@@ -205,14 +209,17 @@ a:active {
 }
 
 figcaption{
-  text-align: center;
+  /*text-align: center;*/
   font-family: bold;
   color:white;
+  margin-right: 15%;
+  margin-left: 35%;
 }
 
 #Thomas_family_photo{
   display: block;
-  margin:10px auto 10px auto;
+  margin-right:25%;
+  margin-left: 25%;
   width:50%;
   height:50%;
   border:solid #6B5B95 3px;
@@ -224,9 +231,12 @@ figcaption{
 }
 
 #Bernard_profile_photo, #Jill_profile_photo, #Elena_profile_photo, #Harry_profile_photo{
-  position:center;
+  /*position:center;*/
+  display:block;
+  margin-right: 15%;
+  margin-left: 35%;
   height: 25%;
-  width:25%;
+  width:25%; 
   border:solid grey 3px;
   border-radius: 15%;
   -webkit-border-radius: 15%;
