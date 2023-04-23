@@ -194,6 +194,10 @@ a:active {
   padding:10px;
 }
 
+fig{
+  align-items: center;
+}
+
 figcaption{
   /*text-align: center;*/
   font-family: bold;
