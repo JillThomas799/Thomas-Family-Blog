@@ -278,6 +278,8 @@ article{
 .blogPhotoDiv{
   display:flex;
   flex-direction: row;
+  background-color: #7FFFD4;
+  padding-bottom: 5%;
 }
 
 .blogPhoto img{
