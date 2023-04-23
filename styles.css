@@ -6,7 +6,8 @@ body{
 
 h1{
     display:block;
-    text-align: center;
+    /* text-align: center; */
+    justify-content: center;
     font: size 1.0em;
     color:white;
     background-color:#92A8D1;
@@ -76,19 +77,6 @@ img alt{
   text-align: center;
   background-color: #92A8D1;
   border:solid 3px;
-}
-
-#monthly_blog_photo{
-height: auto;
-border:solid grey;
-border-radius:30px;
-}
-
-.text{
-  text-decoration: none;
-  color:bisque;
-  font-weight: b;
-  font-size: 1.25rem;
 }
 
 ul {
@@ -289,9 +277,16 @@ article{
   flex-direction: row;
 }
 
-.blogPhoto{
-  height:250px;
-  width:250px;
+.blogPhoto img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:70%;
+  height:70%;
+  border:solid grey;
+  border-radius:30px;
+  }
+
 }
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
