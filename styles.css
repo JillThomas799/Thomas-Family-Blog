@@ -194,16 +194,10 @@ a:active {
   padding:10px;
 }
 
-fig{
-  align-items: center;
-}
-
 figcaption{
-  /*text-align: center;*/
+  text-align: center;
   font-family: bold;
   color:white;
-  margin-right: 15%;
-  margin-left: 35%;
 }
 
 #Thomas_family_photo{
