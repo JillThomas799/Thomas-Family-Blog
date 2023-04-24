@@ -141,7 +141,9 @@ a:active {
 }
 
  #button{
-  display:inline-block;
+  /* display:inline-block; */
+  display:block;
+  position: fixed;
   height:50px;
   width: 100px;
   background-color:#92A8D1;
