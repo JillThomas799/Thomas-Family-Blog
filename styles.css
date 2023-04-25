@@ -263,6 +263,8 @@ article{
 .blogDiv{
   border:solid #757c88 4px;
   background-color:#48AAAD;
+  display:flex;
+  flex-direction:column;
 }
 
 .date, .news{
@@ -296,7 +298,11 @@ article{
   border-radius:30px;
   }
 
-
+  .blogPhotos3 img{
+    display: block;
+    border:solid grey;
+    border-radius:30px;
+  } 
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 
