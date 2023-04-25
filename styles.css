@@ -130,14 +130,12 @@ a:active {
 
 #myDiv ul{
   list-style-type:none;
-  margin:0;
-  padding:0;
 }
 
 #myDiv li{
   float:left;
   padding-top:5px;
-  padding-bottom:5px;
+  padding-bottom:10px;
   font-weight: bold;
 }
 
