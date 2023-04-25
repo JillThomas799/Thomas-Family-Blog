@@ -28,7 +28,7 @@ h2{
 
 .text{
   text-decoration: none;
-  color:bisque;
+  color:navy;
   font-weight: bold;
   font-size: 1.25rem;
 }
@@ -88,18 +88,19 @@ img alt{
 }
 
 ul {
-    list-style-type:none;
+    /* list-style-type:none; */
   }
 
 a{
-  color:white;
+  color:navy;
   text-decoration: none;
+  text-decoration: underline;
   -moz-text-decoration: none; 
 }
 
 a link{
   color:white;
-  text-decoration: none;
+  text-decoration: underline;
   -moz-text-decoration: none;
 }
 
@@ -110,8 +111,8 @@ a visited{
 }
 
 a:hover{
-  color:navy;
-  text-decoration: none;
+  color:whitesmoke;
+  text-decoration: underline;
   -moz-text-decoration: none; 
 }
 
@@ -124,19 +125,19 @@ a:active {
   width: 150px;
   height: 100%;
   visibility:hidden;
+  background-color: grey;
 }
 
 #myDiv ul{
   list-style-type:none;
   margin:0;
   padding:0;
-  background-color: grey;
 }
 
 #myDiv li{
   float:left;
-  padding:5px;
-  background-color: grey;
+  padding-top:5px;
+  padding-bottom:5px;
   font-weight: bold;
 }
 
@@ -152,13 +153,18 @@ a:active {
   font-size: large;
   font-weight: bold;
   color:white;
-  margin:5%;
+  margin:5% 5% 5% 25%;
   border-radius:15%;
   -webkit-border-radius:15%;
   -moz-border-radius:15%;
   -ms-border-radius:15%;
   -o-border-radius:15%;
 } 
+
+#menuUnderline{
+  text-decoration: underline;
+  color:navy;
+}
 
 .profile{
   display:flex;
