@@ -56,9 +56,13 @@ h2{
 
 #Members li{
     color:grey;
-    list-style: none;
+    list-style-type: none;
     font-weight: bold;
     text-align: center;
+}
+
+.Months li{
+  list-style-type: none;
 }
 
 p{
@@ -140,16 +144,18 @@ a:active {
  #button{
   /* display:inline-block; */
   display:block;
-  position: fixed;
+  /* position: fixed; */
+  position:absolute;
   height:50px;
-  width: 100px;
+  /* width: 100px; */
+  width:20%;
   background-color:#92A8D1;
   border:gray 2px solid;
   text-align: center;
   font-size: large;
   font-weight: bold;
   color:white;
-  margin:5% 5% 5% 25%;
+  margin:5% 20% 5% 60%;
   border-radius:15%;
   -webkit-border-radius:15%;
   -moz-border-radius:15%;
