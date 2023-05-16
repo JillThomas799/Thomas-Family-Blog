@@ -267,10 +267,6 @@ article{
   flex-direction:column;
 }
 
-.blogvideo{
-  padding-top:10px;
-}
-
 .date, .news{
   color:white;
   border:solid 3px #757c88;
@@ -301,6 +297,37 @@ article{
   border:solid grey;
   border-radius:30px;
   }
+
+  .blogPhoto1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:5%;
+    width:30%;
+    height:30%;
+    border:solid grey;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+}
+
+.blogPhoto2 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:5%;
+  width:30%;
+  height:30%;
+  border:solid grey;
+  border-radius:30px;
+  -webkit-border-radius:30px;
+  -moz-border-radius:30px;
+  -ms-border-radius:30px;
+  -o-border-radius:30px;
+}
+  
 
   .blogPhotos3 img{
     display: block;
