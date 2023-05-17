@@ -348,6 +348,20 @@ article{
     flex-direction: column;
   }
 
+  #Bernard_profile_photo, #Jill_profile_photo, #Elena_profile_photo, #Harry_profile_photo, #Lennie_profile_photo {
+    display:block;
+    margin-right:13%;
+    margin-left: 13%;
+    height: 74%;
+    width:74%; 
+    border:solid grey 3px;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+  }
+
 }
 
   
