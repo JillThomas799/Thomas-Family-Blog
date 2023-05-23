@@ -286,6 +286,7 @@ article{
   flex-direction: row;
   background-color: #7FFFD4;
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .blogPhoto img{
@@ -365,6 +366,7 @@ article{
   #ThomasFamilyIntro,.Profession,.profile,.photo,.Dislikes,.Surprisingfacts,.FavouriteBooks,.FavouriteMusic,.blogDiv {
     font-size: small;
   }
+
 
 }
 
