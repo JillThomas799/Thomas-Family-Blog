@@ -357,6 +357,11 @@ article{
     flex-direction: column;
   }
 
+  .datenewsDiv{
+    display: flex;
+    flex-direction: column;
+  }
+
   .profile{
     display: flex;
     flex-direction: column;
