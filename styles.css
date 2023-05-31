@@ -104,6 +104,19 @@ img:hover{
   -o-transform: scale(1.75);
 }
 
+.img2:hover{
+  transform: scale(2.50);
+  transition: 0.25s ease;
+  -webkit-transition: 0.25s ease;
+  -moz-transition: 0.25s ease;
+  -ms-transition: 0.25s ease;
+  -o-transition: 0.25s ease;
+  -webkit-transform: scale(2.50);
+  -moz-transform: scale(2.50);
+  -ms-transform: scale(2.50);
+  -o-transform: scale(2.50);
+}
+
 a{
   color:navy;
   text-decoration: none;
@@ -385,6 +398,20 @@ article{
   #ThomasFamilyIntro,.Profession,.profile,.photo,.Dislikes,.Surprisingfacts,.FavouriteBooks,.FavouriteMusic,.blogDiv {
     font-size: small;
   }
+
+  .img2:hover{
+    transform: scale(1.75);
+    transition: 0.25s ease;
+    -webkit-transition: 0.25s ease;
+    -moz-transition: 0.25s ease;
+    -ms-transition: 0.25s ease;
+    -o-transition: 0.25s ease;
+    -webkit-transform: scale(1.75);
+    -moz-transform: scale(1.75);
+    -ms-transform: scale(1.75);
+    -o-transform: scale(1.75);
+}
+  
 
 
 }
