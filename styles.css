@@ -318,6 +318,10 @@ article{
   flex-direction: row;
 }
 
+.datenewsDiv li{
+  list-style-type: none;
+}
+
 .blogPhotoDiv{
   display:flex;
   flex-direction: row;
