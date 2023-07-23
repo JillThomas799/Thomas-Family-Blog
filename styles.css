@@ -378,6 +378,28 @@ article{
     border-radius:30px;
   } 
 
+  /* .titleSun{
+  background:#FFD437;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom:150px;
+  display: flex;
+  align-items: left;
+  box-shadow: 0 0 8px 8px #FAF9D0 inset;
+}
+   */
+
+  .sky{
+    border-radius: 0%;
+  background:#FFD437;
+  background:#FFD437;
+  background: radial-gradient(circle closest-corner at 15% 40%,   #FFD437 ,    #FFD437 20%,    #ffff66 21%,      #bbeeff 100% 100% );
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 
@@ -391,7 +413,7 @@ article{
     display: flex;
     flex-direction: column;
   }
-
+  
   .profile{
     display: flex;
     flex-direction: column;
