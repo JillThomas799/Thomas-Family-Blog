@@ -1,4 +1,3 @@
-
 body{
   display:flex;
   flex-direction:column;
@@ -18,6 +17,153 @@ h1{
     -moz-border-radius: 20%;
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
+}
+
+.autumnal{
+  background:linear-gradient(90deg, #bbeeff,  #DBE6AF, #EDB579,#CC5543, #59484F);
+  transform:rotate('360deg');
+  -webkit-transform:rotate('360deg');
+  -moz-transform:rotate('360deg');
+  -ms-transform:rotate('360deg');
+  -o-transform:rotate('360deg');
+  animation-timing-function: 10s infinite;
+}
+
+/* leaf animations */
+
+#leaves {position:relative;top:-50px;width:100%;text-align: right;}
+
+#leaves i {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(to bottom right, #309900, #005600);
+    transform: skew(20deg);
+    border-radius: 5% 40% 70%;
+    box-shadow: inset 0px 0px 1px #222;
+    border: 1px solid #333;
+    z-index: 1;
+    -webkit-animation: falling 5s 0s infinite;
+}
+
+#leaves i:nth-of-type(2n) { -webkit-animation: falling2 5s 0s infinite; }
+#leaves i:nth-of-type(3n) { -webkit-animation: falling3 5s 0s infinite; }
+
+#leaves i:before {
+  position: absolute;
+  content: '';
+  top: 117px;
+  right: 9px;
+  height: 27px;
+  width: 32px;
+  transform: rotate(49deg);
+  border-radius: 0% 15% 15% 0%;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-left: 0px solid #222;
+  border-right: 1px solid #222;
+  background: linear-gradient(to right, rgba(0,100,0,1), #005600);
+  z-index: 1;
+}
+
+#leaves i:after {
+  content: '';
+  height: 125px;
+  width: 10px;
+  background: linear-gradient(to right, rgba(0,0,0,.15), rgba(0,0,0,0));
+  display: block;
+  transform: rotate(125deg);
+  position: absolute;
+  left: 85px;
+  border-radius:50%;
+}
+
+
+#leaves i:nth-of-type(n)    { height:23px; width:30px; }
+#leaves i:nth-of-type(n):before { width:7px; height:5px; top:17px; right:1px; }
+#leaves i:nth-of-type(n):after { width:2px; height:17px; left: 12px; top:0px; }
+
+#leaves i:nth-of-type(2n+1)    { height:11px; width:16px; }
+#leaves i:nth-of-type(2n+1):before { width:4px; height:3px; top:7px; right:0px; }
+#leaves i:nth-of-type(2n+1):after { width:2px; height:6px; left: 5px; top:1px; }
+
+#leaves i:nth-of-type(3n+2)  { height:17px; width:23px; }
+#leaves i:nth-of-type(3n+2):before  { height:4px; width:4px; top:12px; right:1px; }
+#leaves i:nth-of-type(3n+2):after  { height:10px; width:2px; top:1px; left:8px; }
+
+#leaves i:nth-of-type(n)   { -webkit-animation-delay: 1.9s;}
+#leaves i:nth-of-type(2n)  { -webkit-animation-delay: 3.9s;}
+#leaves i:nth-of-type(3n)  { -webkit-animation-delay: 2.3s;}
+#leaves i:nth-of-type(4n)  { -webkit-animation-delay: 4.4s;}
+#leaves i:nth-of-type(5n)  { -webkit-animation-delay: 5s;  }
+#leaves i:nth-of-type(6n)  { -webkit-animation-delay: 3.5s;}
+#leaves i:nth-of-type(7n)  { -webkit-animation-delay: 2.8s;}
+#leaves i:nth-of-type(8n)  { -webkit-animation-delay: 1.5s;}
+#leaves i:nth-of-type(9n)  { -webkit-animation-delay: 3.3s;}
+#leaves i:nth-of-type(10n) { -webkit-animation-delay: 2.5s;}
+#leaves i:nth-of-type(11n) { -webkit-animation-delay: 1.2s;}
+#leaves i:nth-of-type(12n) { -webkit-animation-delay: 4.1s;}
+#leaves i:nth-of-type(13n) { -webkit-animation-delay: 1s;  }
+#leaves i:nth-of-type(14n) { -webkit-animation-delay: 4.7s;}
+#leaves i:nth-of-type(15n) { -webkit-animation-delay: 3s;  }
+
+#leaves i:nth-of-type(n)    { background: linear-gradient(to bottom right, #309900, #005600); }
+#leaves i:nth-of-type(2n+2)  { background: linear-gradient(to bottom right, #5e9900, #2b5600); }
+#leaves i:nth-of-type(4n+1)  { background: linear-gradient(to bottom right, #990, #564500); }
+
+#leaves i:nth-of-type(n)    { opacity: .7;}
+#leaves i:nth-of-type(3n+1)  { opacity: .5;}
+#leaves i:nth-of-type(3n+2)  { opacity: .3;}
+
+#leaves i:nth-of-type(n)    {transform: rotate(180deg);}
+
+
+#leaves i:nth-of-type(n) { -webkit-animation-timing-function:ease-in-out;}
+
+@-webkit-keyframes falling {
+    
+    0% {
+        -webkit-transform:
+            translate3d(300,0,0)
+            rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-350px,700px,0)
+            rotate(90deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes falling3 {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0)
+            rotate(-20deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-230px,640px,0)
+            rotate(-70deg);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes falling2 {
+     0% {
+        -webkit-transform:
+            translate3d(0,0,0)
+            rotate(90deg);
+    }
+    
+    100% {
+        -webkit-transform:
+            translate3d(-400px,680px,0)
+            rotate(0deg);
+        opacity: 0;
+    }
 }
 
 h2{
@@ -421,6 +567,602 @@ article{
     -ms-border-radius: 0%;
     -o-border-radius: 0%;
 }
+
+/*Creating August header with animated cyclist*/
+#August_header{
+ display: flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items: center;
+ height: 50vh;
+ width: 100vw;
+ overflow: hidden;
+ background-image: radial-gradient(circle closest-corner at 15% 20%,   #FFD437 ,    #FFD437 20%,    #ffff66 21%,     #bbeeff 100% 100% );
+ border-radius:0;
+ -webkit-border-radius:0;
+ -moz-border-radius:0;
+ -ms-border-radius:0;
+ -o-border-radius:0;
+ border:solid white;
+ margin-bottom:20px;
+}
+
+#August_title{
+  font-weight:bold;
+  color:white;
+  font-size: 1.75rem;
+  position:absolute;
+  top:180px;
+}
+
+.bike-riding {
+  display:flex;
+  flex-direction:column;
+  transform:scale(0.2);
+  -webkit-transform:scale(0.2);
+  -moz-transform:scale(0.2);
+  -ms-transform:scale(0.2);
+  -o-transform:scale(0.2);
+}
+
+.cyclist {
+  position: relative;
+  animation: ride 1s linear infinite;
+  top:400px;
+}
+
+/*Style for my bike:*/
+
+.bike {
+  position: relative;
+  background-color: #B2AC88;
+  width:5%;
+  height: 5%;
+  border-radius:10px;
+  box-shadow: inset 10px -3px rgba(0,0,0,0.1);
+}
+
+.bike:before, .bike:after {
+  content:"";
+  position: absolute;
+  background-color: #B2AC88;
+  width:8px;
+  height: 140px;
+  top:-10px;
+}
+
+.bike:before {
+  transform: rotate(35deg);
+  left:126px;
+  box-shadow: -120px 85px #B2AC88, 0px -30px #B2AC88;
+}
+
+.bike:after {
+  transform: rotate(-35deg);
+  left:49px;
+  box-shadow: 120px 85px #B2AC88, 0px -30px #B2AC88;
+}
+
+.leftTyre, .rightTyre {
+  width:150px;
+  height:150px;
+  position: absolute;
+  border: 10px solid #333;
+  border-radius:50%;
+  z-index:1;
+  top:30px;
+  animation: spin 1s linear infinite;
+}
+
+.leftTyre {
+  left:-140px;
+}
+
+.rightTyre {
+  left:155px;
+}
+
+.leftTyre:before, .rightTyre:before {
+  content:"";
+  position: absolute;
+  width:135px;
+  height:135px;
+  border-radius:50%;
+  border: 8px solid #fcfffc;
+}
+
+.leftTyre:after, .rightTyre:after {
+  content:"";
+  position: absolute;
+  width:2px;
+  height: 145px;
+  left:75px;
+  top:0;
+  background-color: #fcfffc;
+}
+
+.spokes {
+  position: absolute;
+  width:145px;
+  height: 2px;
+  background-color: #fcfffc;
+  top:75px;
+}
+
+.spokes:before, .spokes:after {
+  content:"";
+  position: absolute;
+   width:145px;
+  height: 2px;
+  background-color: #fcfffc;  
+  left:3px;
+}
+
+.spokes:before {
+  transform: rotate(45deg);
+}
+
+.spokes:after {
+  transform: rotate(-45deg);
+}
+
+.wheel {
+  z-index:6;
+  position: absolute;
+  border-radius:50%;
+  background-color: #71706e;
+  width:20px;
+  height:20px;
+  top:105px;
+  left:-65px;
+  box-shadow: 295px 0 #71706e, 146px 0px #71706e;
+}
+
+.wheel:before {
+  content:"";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius:100%;
+  border-top: 11px solid silver;
+  border-left: 8px solid #B2AC88;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  transform: rotate(20deg);
+  top:-140px;
+  left:240.2px;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  -ms-border-radius:100%;
+  -o-border-radius:100%;
+}
+
+.shadow {
+  position: absolute;
+  width:520px;
+  height:15px;
+  background-color: rgba(90,83,72);
+  top:620px;
+  left:45px;
+  border-radius:10px;
+  animation: scale 2s linear infinite;
+}
+
+/*CSS Bike Animation*/
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes scale {
+  0% {transform: scaleX(1);}
+  25% {transform: scaleX(0.9);}
+  50% {transform: scaleX(1);}
+  75% {transform: scaleX(0.9);}
+  100% {transform: scaleX(1);}
+}
+
+Add pedals and the chain:
+
+.pedals {
+  position: relative;
+  z-index:7;
+  width:50px;
+  height:50px;
+  border: 5px solid black; 
+  border-radius:50%;
+  top:85px;
+  left:60px;
+  animation: spin 1s linear infinite; 
+}
+
+.pedals:before {
+  content:"";
+  position: absolute;
+  border-radius: 10px;
+  background-color: black;
+  height: 30px;
+  width:5px;
+  left:22px;
+  top:-5px;
+}
+
+.chain {
+  position: absolute;
+  top:81px;
+}
+
+.chain:before, .chain:after {
+  content:"";
+  position: absolute;
+  background-color: #333;
+  width:140px;
+  height:2px;
+  left:-60px;
+}
+
+.chain:before {
+  top:20px;
+  transform: rotate(-10deg);
+}
+
+.chain:after {
+  top:47px;
+  transform: rotate(10deg);
+}
+
+/*CSS Bike*/
+
+/*Style the cyclist:*/
+
+.girl {
+  position: absolute;
+}
+
+.top {
+  position: absolute;
+  width:80px;
+  height: 160px;
+  border-top: 50px solid #32CD32;
+  border-left: 50px solid #32CD32;
+  border-top-left-radius:100%;
+  top:-190px;
+  left:-18px;
+  z-index:1;
+}
+
+.top:before {
+  content:"";
+  position: absolute;
+  width:50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: #32CD32;
+  left:50px;
+  top:-50px;
+  box-shadow: -10px 10px#32CD32;
+}
+
+.rightArm, .leftArm {
+  position: absolute;
+  width:15px;
+  height: 100px;
+  border-radius:20px;
+  transform: rotate(-30deg);
+}
+
+.rightArm {
+  background-color: #32CD32;
+  left:130px;
+  top:-175px;
+  z-index:8;
+}
+
+.leftArm {
+  background-color: #32CD32;
+  left:105px;
+  top:-185px;
+  z-index:-1;
+}
+
+.rightArm:before, .leftArm:before {
+  content:"";
+  position: absolute;
+  width:15px;
+  height: 100px;
+  border-radius:20px;
+  top:85px;
+  left:15px;
+  transform: rotate(-20deg);
+}
+
+.rightArm:before {
+  background-color: #32CD32;
+}
+
+.leftArm:before {
+  background-color: #32CD32;
+}
+
+.head {
+  position: absolute;
+  background-color: #cd9777;
+  width: 40px;
+  height:20px;
+  top:-190px;
+  left:110px;
+  z-index:-1;
+  transform: rotate(-20deg);
+}
+
+.head:before, .head:after {
+  content:"";
+  position: absolute;
+  background-color: #deab90;
+  border-radius: 50%;
+}
+
+.head:before {
+  width: 75px;
+  height: 75px;
+  left:30px;
+  top:-30px;
+}
+
+.head:after {
+  width:20px;
+  height:20px;
+  left:78px;
+  top:25px;
+}
+
+.hair {
+  position: absolute;
+  width: 80px;
+  height:40px;
+  border-radius:0 100% 0 0;
+  background-color: #D0D9cd;
+  top:-245px;
+  left:142px; 
+  z-index:10;
+}
+
+.hair:after {
+  content:"";
+  position: absolute;
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  background-color: #D0D9cd;
+  left:-20px;
+}
+
+.hair:before {
+  content:"";
+  position: absolute;
+  width: 80px;
+  height:25px;
+  border-radius:50% 0/100% 0;
+  background-color: #ee9b00;
+  transform-origin: right;
+  left:-44px;
+  top:37px;
+  animation: hair 1s linear infinite;
+}
+
+@keyframes hair {
+  0% {transform: rotate(0);}
+  25% {transform: rotate(10deg);}
+  50% {transform: rotate(0);}
+  75% {transform: rotate(10deg);}
+  100% {transform: rotate(0);}
+}
+
+.strap {
+  position: absolute;
+  background-color: #333;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  top:-197px;
+  left:197px;
+}
+
+.strap:after {
+  content:"";
+  position: absolute;
+  background-color: #333;
+  width:7px;
+  height:60px;
+  border-radius:10px;
+  transform: rotate(-15deg);
+  top:-22px;
+  left:-30px;
+}
+
+.strap:before {
+  content:"";
+  position: absolute;
+  background-color: #ee9b00;
+  width:60px;
+  height:30px;
+  border-radius: 50px 50px 50px 0;
+  left:-60px;
+  top:-30px;
+}
+
+Add and animate the legs:
+
+.trousers {
+  position: absolute;
+  top:-70px;
+  left:-20px;
+}
+
+.rightLeg {
+  position: absolute;
+  background-color: #85929e;
+  width: 120px;
+  height:37px;
+  top:17px;
+  left:12px;
+  border-radius: 0 10px 0 30px;
+  transform-origin: top left;
+  z-index:7;
+  animation: rotate 1s linear infinite;
+}
+
+.trousers:after {
+  content:"";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 25px 50px 50px;
+  left:-5px;
+  background-color: #85929e ;
+  transform: rotate(20deg);  
+}
+
+.trousers:before {
+  content:"";
+  position: absolute;
+  background-color:  #85929e ;
+  width:65px;
+  height:25px;
+  border-radius: 20px;
+  left:-10px;
+  top:50px;
+}
+
+.leftLeg {
+  position: absolute;
+  background-color:  #85929e;
+  width: 120px;
+  height:37px;
+  top:14px;
+  left:13px;
+  border-radius: 0 10px 0 30px;
+  transform-origin: top left;
+  z-index:-4;
+  animation: rotate 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes rotate {
+ 0% {transform: rotate(0);}
+  25% {transform: rotate(15deg);}
+  55% {transform: rotate(30deg);}
+  80% {transform: rotate(15deg);}
+  100% {transform: rotate(0);}
+}
+
+.calf {
+  position: absolute;
+  transform-origin: top;
+  width:33px;
+  height: 120px;
+  background-color:  #85929e ;
+  left:87px;
+  top:9px;
+  border-radius: 0 10px 0 0;
+  animation: cycle 1s linear infinite;
+}
+
+.leftcalf {
+  position: absolute;
+  transform-origin: top;
+  width:33px;
+  height: 120px;
+  background-color:  #85929e ;
+  left:87px;
+  top:9px;
+  border-radius: 0 10px 0 0;
+  animation: cycle 1s linear infinite;
+  animation-delay: .5s;
+}
+
+.leftcalf:before, .calf:before {
+  content:"";
+  position: absolute;
+  background-color: #85929e ;
+  width:55px;
+  height: 30px;
+  border-radius:0 20px 0 0;
+  top:70px;
+  box-shadow: inset 0 -10px #fff;
+}
+
+.leftcalf:after, .calf:after {
+  content:"";
+  position: absolute;
+  background-color:  #85929e ;
+  width:35px;
+  height:10px;
+  border-radius:10px;
+  top:100px;
+  left:10px;
+}
+
+@keyframes cycle {
+ 0% {transform: rotate(0);}
+ 25% {transform: rotate(-27deg);}
+ 50% {transform: rotate(-32deg);}
+ 75% {transform: rotate(-10deg);}
+ 100% {transform: rotate(0);}
+}
+
+/*CSS Cycling Animation
+
+Add some clouds:*/
+
+.clouds {
+  position: absolute;
+  width:130px;
+  height:30px;
+  border-radius:20px;
+  background-color: rgba(255,255,255,0.5);
+  top:10px;
+  animation: clouds 2.7s linear infinite reverse;
+}
+
+.clouds:before, .clouds:after {
+  content:"";
+  position: absolute;
+  width:130px;
+  height:60px;
+  border-radius:20px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.clouds:before {
+  left:-300px;
+  top:-200px;
+  animation: clouds 2.2s linear infinite reverse;
+}
+
+.clouds:after {
+  left: 350px;
+  top:-100px;
+  animation: clouds 3.1s linear infinite reverse;
+  -webkit-animation: clouds 3.1s linear infinite reverse;
+}
+
+@keyframes clouds {  
+  from{ 
+    left:-600px; 
+  }
+  to{ 
+    left: 600px; 
+  }
+}
+
+
+
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 
