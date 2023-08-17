@@ -416,12 +416,26 @@ fig figcaption {
   color:white;
 }
 
-#Thomas_family_photo{
+/*#Thomas_family_photo{
   display: block;
   margin-right:25%;
   margin-left: 25%;
   width:50%;
   height:50%;
+  border:solid #6B5B95 3px;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+  border-radius: 15%;
+}*/
+
+#Thomas_family_photo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-left:40%;
+  margin-right:40%;
   border:solid #6B5B95 3px;
   -webkit-border-radius: 15%;
   -moz-border-radius: 15%;
@@ -1164,7 +1178,7 @@ Add some clouds:*/
 
 
 
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other and enlarge Thomas Family photo home page */
 
 @media screen and (max-width: 600px) {
   .blogPhotoDiv {
@@ -1235,9 +1249,21 @@ Add some clouds:*/
 }
 
 }
+
+/* On screens that are 1200px wide or less, enlarge Thomas Family photo home page */
+@media screen and (max-width: 900px){
+  #Thomas_family_photo{
+    display:flex;
+    align-items:center;
+   justify-content:center;
+    margin-left:30%;
+    margin-right:30%;
+    border:solid #6B5B95 3px;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    border-radius: 15%;
+  }
   
-
-
 }
-
-  
