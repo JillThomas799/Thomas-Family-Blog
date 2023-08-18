@@ -418,20 +418,6 @@ fig figcaption {
   color:white;
 }
 
-/*#Thomas_family_photo{
-  display: block;
-  margin-right:25%;
-  margin-left: 25%;
-  width:50%;
-  height:50%;
-  border:solid #6B5B95 3px;
-  -webkit-border-radius: 15%;
-  -moz-border-radius: 15%;
-  -ms-border-radius: 15%;
-  -o-border-radius: 15%;
-  border-radius: 15%;
-}*/
-
 #Thomas_family_photo{
   display:flex;
   align-items:center;
@@ -560,18 +546,6 @@ article{
     border:solid grey;
     border-radius:30px;
   } 
-
-  /* .titleSun{
-  background:#FFD437;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom:150px;
-  display: flex;
-  align-items: left;
-  box-shadow: 0 0 8px 8px #FAF9D0 inset;
-}
-   */
 
   .sky{
     border-radius: 0%;
@@ -783,7 +757,7 @@ article{
   100% {transform: scaleX(1);}
 }
 
-Add pedals and the chain:
+/*Add pedals and the chain:*/
 
 .pedals {
   position: relative;
@@ -1261,7 +1235,7 @@ Add some clouds:*/
   font-size: large;
   font-weight: bold;
   color:white;
-  margin:10% 20% 5% 70%;
+  margin:3% 15% 5% 70%;
   border-radius:15%;
   -webkit-border-radius:15%;
   -moz-border-radius:15%;
