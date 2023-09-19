@@ -1,3 +1,5 @@
+#image_resizing_draftPhotos.py
+
 import os
 from PIL import Image
 
@@ -14,5 +16,3 @@ for image_name in files:
     image = Image.open(image_path)
     image.thumbnail((500,500),Image.ANTIALIAS)
     image.save(os.path.join(destdir, image_name ),"JPEG")
-
-

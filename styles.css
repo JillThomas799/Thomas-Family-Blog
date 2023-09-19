@@ -1245,8 +1245,11 @@ Add some clouds:*/
   -o-border-radius:15%;
 } 
 
+.slideshow-container{
+  
 
 }
+
 
 /* On screens that are 1200px wide or less, enlarge Thomas Family photo home page */
 @media screen and (max-width: 900px){
