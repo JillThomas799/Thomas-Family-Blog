@@ -479,7 +479,8 @@ article{
   background-color:#0492c2;
   text-align: center;
   padding:10px 10px 10px 10px;
-  margin:10px
+  margin:10px;
+  font-size:medium;
 }
 
 .datenewsDiv{

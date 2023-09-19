@@ -316,7 +316,266 @@
                     </div> 
             </div>
 
-            
+            <div class="blogDiv">
+              <div class="datenewsDiv">
+                  <section class = "date">Sunday, September 17th, 2023</section>
+                  <section class = "news"><strong color="white">Trip to Birdoswald Roman Fort and learning how to script a slideshow </strong> 
+                          <br>
+                 Trip to visit Birdoswald Roman Fort today, which is owned and run by English Heritage. We had not visited since before the pandemic and 
+                 the improvements of the past few years. The displays are now much more interactive and were well done and the fort seems to be doing well
+                 as there were lots of visitors there today.Then we walked some of the Hadrian's Wall path before returning to the fort .
+                          <br>
+                          <br>
+                  Also, progress is being made with HTML, CSS and javascript and for the first time, the images can be displayed in a slideshow format as demonstrated below.
+                  </section>
+              </div>
+          </div>
+
+          <div class="slideshow-container">
+          <style>
+              body {
+                margin: 0;
+              }
+              
+              * {
+                box-sizing: border-box;
+              }
+              
+              img {
+                vertical-align: middle;
+                margin-right:75vw;
+                margin-left:25vw;
+                width:auto;
+                height:auto;
+                border:solid #757c88 4px;
+                margin-top:2%;
+                margin-bottom:2%;
+              }
+
+              .row{
+                width:55vw;
+                height:auto;
+              }
+
+              /* Position the image container (needed to position the left and right arrows) */
+              .container {
+                position: relative;
+                background-color:#7FFFD4;
+                border:grey 4px;
+              }
+              
+              /* Hide the images by default */
+              .mySlides {
+                display: none;
+              }
+              
+              /* Add a pointer when hovering over the thumbnail images */
+              .cursor {
+                cursor: pointer;
+              }
+              
+              /* Next & previous buttons */
+              .prev,
+              .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: grey;
+                /* font-weight: bold; */
+                font-size: 30px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+              }
+              
+              /* Position the "next button" to the right */
+              .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+              }
+              
+              /* On hover, add a black background color with a little bit see-through */
+              .prev:hover,
+              .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+              }
+              
+              /* Number text (1/3 etc) */
+              .numbertext {
+                color: grey;
+                font-weight: bold;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+              }
+              
+              /* Container for image text */
+              .caption-container {
+                text-align: center;
+                /* background-color: #222;
+                padding: 2px 16px; */
+                color: white;
+              }
+              
+              .row:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+              
+              /* Six columns side by side */
+              .column {
+                float: left;
+                width: 16.66%;
+              }
+              
+              /* Add a transparency effect for thumnbail images */
+              .demo {
+                opacity: 0.6;
+              }
+              
+              .active,
+              .demo:hover {
+                opacity: 1;
+              }
+
+              @media screen and (max-width: 600px) {
+  img {
+    display:block;
+    align-content: center;
+    justify-content: center;
+    width:50%;
+    height:auto;
+  }
+
+  .row{
+    width:55vw;
+    height:auto;
+    margin-bottom: 20px;
+    
+  }
+}
+
+              @media screen and (max-width: 900px){
+  img {
+    display:block;
+    align-content: center;
+    justify-content: center;
+    width:50%;
+    height:auto;
+  } 
+
+  .row{
+    width:55vw;
+    height:auto;
+    margin-bottom:20px;
+  }
+}
+
+              </style>
+              
+              
+              <h2 style="text-align:center; font-size:large;font-weight:bold;">Birdoswald Visit</h2>
+              
+              <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="resources\images\IMG_20230917_130931.jpg" style="border-radius: 10%;">
+                  <figcaption style="text-align: center; margin-bottom: 20px;"><strong style="color:black;" >Elena about to go investigating <br> Birdoswald Roman Fort</strong></figcaption>
+                </div>
+              
+                <div class="mySlides
+                ">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="resources\images\IMG_20230917_133401.jpg" style="border-radius: 10%;">
+                  <figcaption style="text-align: center; margin-bottom: 20px;"><strong style="color:black;" >The Farmhouse at Birdoswald</strong></figcaption>
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="resources\images\IMG_20230917_142054.jpg" style="border-radius: 10%;">
+                  <figcaption style="text-align: center; margin-bottom: 20px;"><strong style="color:black;" >Turret 49b-Hadrian's Wall</strong></figcaption>
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="resources\images\IMG_20230917_144702.jpg" style="border-radius: 10%;">
+                  <figcaption style="text-align: center; margin-bottom: 20px;"><strong style="color:black;" >On the Hadrian's Wall Path</strong></figcaption>
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="resources\images\IMG_20230917_150008.jpg" style="border-radius: 10%;">
+                  <figcaption style="text-align: center; margin-bottom: 20px;"><strong style="color:black;" >Birdowald Fort <br> looking towards Whin Sill</strong></figcaption>
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="resources\images\IMG_20230917_150104.jpg" style="border-radius: 10%;">
+                  <figcaption style="text-align: center; margin-bottom: 20px;"><strong style="color:black;" >And the Whin Sill in close up</strong></figcaption>
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="resources\images\IMG_20230917_130931.jpg" style="width:50%; height:auto; border-radius:50%; border:grey 3cm;" onclick="currentSlide(1)" alt="Ready to investigate Birdoswald Roman Fort">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="resources\images\IMG_20230917_133401.jpg" style="width:50%;height:auto;border-radius:50%; border:grey 3px;" onclick="currentSlide(2)" alt="The Farmhouse">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="resources\images\IMG_20230917_142054.jpg" style="width:50%;height:auto;border-radius:50%; border:grey 3px;" onclick="currentSlide(3)" alt="">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="resources\images\IMG_20230917_144702.jpg" style="width:50%;height:auto;border-radius:50%; border:grey 3px;" onclick="currentSlide(4)" alt="Walking along the Hadrian's Wall path">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="resources\images\IMG_20230917_150008.jpg" style="width:50%;height:auto;border-radius:50%; border:grey 3px;" onclick="currentSlide(5)" alt="Looking out towards the Whin Sill">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="resources\images\IMG_20230917_150104.jpg" style="width:50%;height:auto;border-radius:50%; border:grey 3px;" onclick="currentSlide(6)" alt="And closer...the Whin Sill">
+                  </div>
+                </div>
+              <!-- </div> -->
+              
+              <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+              </script>
+              </div>
 
             
                     
