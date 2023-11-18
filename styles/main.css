@@ -1,0 +1,69 @@
+#November_header body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+#November_header .pyro > .before, #November_header .pyro > .after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+  animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+#November_header .pyro > .after {
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
+}
+@keyframes bang {
+  to {
+    box-shadow: 40px -186.6666666667px hsl(143, 100%, 50%), 169px -407.6666666667px hsl(209, 100%, 50%), 117px -257.6666666667px hsl(211, 100%, 50%), 188px -85.6666666667px hsl(132, 100%, 50%), 200px 28.3333333333px hsl(205, 100%, 50%), -196px -328.6666666667px hsl(135, 100%, 50%), 54px -304.6666666667px hsl(5, 100%, 50%), -17px -65.6666666667px hsl(19, 100%, 50%), -160px -245.6666666667px hsl(113, 100%, 50%), 109px -212.6666666667px hsl(191, 100%, 50%), -149px 25.3333333333px hsl(157, 100%, 50%), -48px -284.6666666667px hsl(336, 100%, 50%), 149px -133.6666666667px hsl(352, 100%, 50%), 241px -274.6666666667px hsl(197, 100%, 50%), 68px -89.6666666667px hsl(185, 100%, 50%), -176px -188.6666666667px hsl(199, 100%, 50%), 6px -326.6666666667px hsl(27, 100%, 50%), -196px -302.6666666667px hsl(214, 100%, 50%), -10px -331.6666666667px hsl(336, 100%, 50%), -167px -203.6666666667px hsl(318, 100%, 50%), 141px -265.6666666667px hsl(244, 100%, 50%), 164px 37.3333333333px hsl(40, 100%, 50%), -185px -26.6666666667px hsl(275, 100%, 50%), 173px -265.6666666667px hsl(11, 100%, 50%), -110px 50.3333333333px hsl(49, 100%, 50%), 152px -218.6666666667px hsl(214, 100%, 50%), -177px 83.3333333333px hsl(239, 100%, 50%), 107px -198.6666666667px hsl(222, 100%, 50%), 217px 83.3333333333px hsl(340, 100%, 50%), 119px 13.3333333333px hsl(285, 100%, 50%), 41px -257.6666666667px hsl(19, 100%, 50%), 95px -268.6666666667px hsl(76, 100%, 50%), -181px -201.6666666667px hsl(210, 100%, 50%), 94px -91.6666666667px hsl(54, 100%, 50%), 182px -267.6666666667px hsl(189, 100%, 50%), 231px -207.6666666667px hsl(111, 100%, 50%), -74px -153.6666666667px hsl(173, 100%, 50%), 107px -89.6666666667px hsl(111, 100%, 50%), 135px -353.6666666667px hsl(187, 100%, 50%), -32px 65.3333333333px hsl(284, 100%, 50%), 93px -29.6666666667px hsl(212, 100%, 50%), -113px -202.6666666667px hsl(78, 100%, 50%), 46px -137.6666666667px hsl(108, 100%, 50%), 101px -115.6666666667px hsl(243, 100%, 50%), -195px -143.6666666667px hsl(320, 100%, 50%), 232px -258.6666666667px hsl(237, 100%, 50%), 76px -231.6666666667px hsl(59, 100%, 50%), -228px -81.6666666667px hsl(51, 100%, 50%), 36px -155.6666666667px hsl(209, 100%, 50%), -68px -218.6666666667px hsl(107, 100%, 50%), 126px 28.3333333333px hsl(262, 100%, 50%);
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */

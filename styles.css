@@ -462,6 +462,11 @@ article{
   background-color: midnightblue;
 }
 
+.black {
+  background-color:black;
+  
+}
+
 .AquamarineBlue{
   background-color: #7FFFD4;
 }
@@ -471,6 +476,32 @@ article{
   background-color:#48AAAD;
   display:flex;
   flex-direction:column;
+}
+
+#November_header{
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+  justify-content:center;
+}
+
+.blogDivNovemberHeader{
+  border:solid #757c88 4px;
+  background-color:#e47127;
+  display:flex;
+  flex-direction:column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 90vh;
+}
+
+.blogDivNovember{
+  border:solid #757c88 4px;
+  background-color:#682702 ;
+  display:flex;
+  flex-direction:column;
+  margin-top: 10vh;
+  margin-bottom:5vh;
 }
 
 .date, .news{
@@ -483,10 +514,21 @@ article{
   font-size:medium;
 }
 
+.dateNovember, .newsNovember{
+  color:white;
+  border:solid 3px #757c88;
+  background-color: 	 	#773f3f;
+  text-align: center;
+  padding:10px 10px 10px 10px;
+  margin:5px;
+  font-size:medium;
+}
+
 .datenewsDiv{
   display:flex;
   flex-direction: row;
 }
+
 
 .datenewsDiv li{
   list-style-type: none;
@@ -496,6 +538,15 @@ article{
   display:flex;
   flex-direction: row;
   background-color: #7FFFD4;
+  padding-bottom: 10%;
+  padding-top: 5%;
+  margin-top:2%;
+}
+
+.blogPhotoDivNovember{
+  display:flex;
+  flex-direction: row;
+  background-color: #395A42;
   padding-bottom: 10%;
   padding-top: 5%;
   margin-top:2%;
@@ -1165,7 +1216,17 @@ Add some clouds:*/
     flex-direction: column;
   }
 
+  .blogPhotoDivNovember {
+    display: flex;
+    flex-direction: column;
+  }
+
   .datenewsDiv{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .datenewsDivNovember{
     display: flex;
     flex-direction: column;
   }
@@ -1252,6 +1313,8 @@ Add some clouds:*/
 }
 
 
+
+
 /* On screens that are 1200px wide or less, enlarge Thomas Family photo home page */
 @media screen and (max-width: 900px){
   #Thomas_family_photo{
@@ -1267,5 +1330,26 @@ Add some clouds:*/
     -o-border-radius: 15%;
     border-radius: 15%;
   }
+
+  /* On screens that are 1200px wide or less, adjust the height of the November firework display */
+@media screen and (max-width: 900px)
+
+  .blogDivNovemberHeader{
+    border:solid #757c88 4px;
+    background-color:#e47127;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-top:30vh;
+  }
   
 }
+
+
+
+
+
+
+
