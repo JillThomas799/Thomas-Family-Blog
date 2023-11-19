@@ -534,6 +534,10 @@ article{
   list-style-type: none;
 }
 
+.datenewsDivNovember li{
+  list-style-type: none;
+}
+
 .blogPhotoDiv{
   display:flex;
   flex-direction: row;
