@@ -478,6 +478,8 @@ article{
   flex-direction:column;
 }
 
+/*Adjustments for November Settings*/
+
 #November_header{
   display:flex;
   flex-direction:column;
@@ -504,16 +506,6 @@ article{
   margin-bottom:5vh;
 }
 
-.date, .news{
-  color:white;
-  border:solid 3px #757c88;
-  background-color:#0492c2;
-  text-align: center;
-  padding:10px 10px 10px 10px;
-  margin:10px;
-  font-size:medium;
-}
-
 .dateNovember, .newsNovember{
   color:white;
   border:solid 3px #757c88;
@@ -524,11 +516,29 @@ article{
   font-size:medium;
 }
 
+.blogPhotoDivNovember{
+  display:flex;
+  flex-direction: row;
+  background-color: #395A42;
+  padding-bottom: 15%;
+  padding-top: 5%;
+  margin-top:2%;
+}
+
+.date, .news{
+  color:white;
+  border:solid 3px #757c88;
+  background-color:#0492c2;
+  text-align: center;
+  padding:10px 10px 10px 10px;
+  margin:10px;
+  font-size:medium;
+}
+
 .datenewsDiv{
   display:flex;
   flex-direction: row;
 }
-
 
 .datenewsDiv li{
   list-style-type: none;
@@ -542,15 +552,6 @@ article{
   display:flex;
   flex-direction: row;
   background-color: #7FFFD4;
-  padding-bottom: 10%;
-  padding-top: 5%;
-  margin-top:2%;
-}
-
-.blogPhotoDivNovember{
-  display:flex;
-  flex-direction: row;
-  background-color: #395A42;
   padding-bottom: 10%;
   padding-top: 5%;
   margin-top:2%;
@@ -1231,129 +1232,170 @@ Add some clouds:*/
 }
 
 /*Snowfall animation*/
+.snowfallAnimation{
+  z-index:1;
+}
+
 .snow {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: white;
   border-radius: 50%;
 }
 
 .snow:nth-child(1) {
-  transform: translate(56.5936vw, -10px) scale(0.6);
+  transform: translate(56.5936vw, -10px) scale(0.8);
   animation: fall-1 15s -16s linear infinite;
-  -webkit-animation: fall-1 15s -16s linear infinite;
+  -webkit-animation: fall-1 6s -27s linear infinite;
+  -webkit-transform: translate(56.5936vw, -10px) scale(0.8);
+  -moz-transform: translate(56.5936vw, -10px) scale(0.8);
+  -ms-transform: translate(56.5936vw, -10px) scale(0.8);
+  -o-transform: translate(56.5936vw, -10px) scale(0.8);
 }
 @keyframes fall-1 {
   34.585% {
-    transform: translate(57.9903vw, 34.585vh) scale(0.1606);
-  }
+    transform: translate(57.9903vw, 34.585vh) ;
+    -webkit-transform: translate(57.9903vw, 34.585vh) ;
+    -moz-transform: translate(57.9903vw, 34.585vh) ;
+    -ms-transform: translate(57.9903vw, 34.585vh) ;
+    -o-transform: translate(57.9903vw, 34.585vh) ;
+}
   to {
-    transform: translate(57.29195vw, 100vh) scale(0.1606);
-  }
+    transform: translate(57.29195vw, 100vh);
+    -webkit-transform: translate(57.29195vw, 100vh);
+    -moz-transform: translate(57.29195vw, 100vh);
+    -ms-transform: translate(57.29195vw, 100vh);
+    -o-transform: translate(57.29195vw, 100vh);
+}
 }
 .snow:nth-child(2) {
-  /* opacity: 0.0623; */
-  transform: translate(38.6106vw, -10px) scale(0.3982);
-  animation: fall-2 17s -21s linear infinite;
+  transform: translate(38.6106vw, -10px);
+  animation: fall-2 7s -21s linear infinite;
+  -webkit-transform: translate(38.6106vw, -10px));
+  -moz-transform: translate(38.6106vw, -10px));
+  -ms-transform: translate(38.6106vw, -10px));
+  -o-transform: translate(38.6106vw, -10px));
+  -webkit-animation: fall-2 7s -21s linear infinite;
 }
 @keyframes fall-2 {
   70.443% {
-    transform: translate(37.0175vw, 70.443vh) scale(0.5);
-    -webkit-transform: translate(37.0175vw, 70.443vh) scale(0.5);
-    -moz-transform: translate(37.0175vw, 70.443vh) scale(0.5);
-    -ms-transform: translate(37.0175vw, 70.443vh) scale(0.5);
-    -o-transform: translate(37.0175vw, 70.443vh) scale(0.5);
+    transform: translate(37.0175vw, 70.443vh);
+    -webkit-transform: translate(37.0175vw, 70.443vh);
+    -moz-transform: translate(37.0175vw, 70.443vh);
+    -ms-transform: translate(37.0175vw, 70.443vh);
+    -o-transform: translate(37.0175vw, 70.443vh);
 }
   to {
-    transform: translate(37.81405vw, 100vh) scale(0.7);
-    -webkit-transform: translate(37.81405vw, 100vh) scale(0.7);
-    -moz-transform: translate(37.81405vw, 100vh) scale(0.7);
-    -ms-transform: translate(37.81405vw, 100vh) scale(0.7);
-    -o-transform: translate(37.81405vw, 100vh) scale(0.7);
+    transform: translate(37.81405vw, 100vh);
+    -webkit-transform: translate(37.81405vw, 100vh);
+    -moz-transform: translate(37.81405vw, 100vh);
+    -ms-transform: translate(37.81405vw, 100vh);
+    -o-transform: translate(37.81405vw, 100vh);
 }
 }
 .snow:nth-child(3) {
-  transform: translate(18.1453vw, -10px) scale(0.85);
+  transform: translate(18.1453vw, -10px);
   animation: fall-3 7s -24s linear infinite;
-  -webkit-animation: fall-3 7s -24s linear infinite;
-  -webkit-transform: translate(18.1453vw, -10px) scale(0.85);
-  -moz-transform: translate(18.1453vw, -10px) scale(0.85);
-  -ms-transform: translate(18.1453vw, -10px) scale(0.85);
-  -o-transform: translate(18.1453vw, -10px) scale(0.85);
+  -webkit-animation: fall-3 8s -25s linear infinite;
+  -webkit-transform: translate(18.1453vw, -10px);
+  -moz-transform: translate(18.1453vw, -10px);
+  -ms-transform: translate(18.1453vw, -10px);
+  -o-transform: translate(18.1453vw, -10px);
 }
 @keyframes fall-3 {
   71.78% {
-    transform: translate(22.1161vw, 71.78vh) scale(0.9984);
-  }
-  to {
-    transform: translate(20.1307vw, 100vh) scale(0.9984);
-  }
+    transform: translate(18.150vw, 71.78vh);
+    -webkit-transform: translate(18.150vw, 71.78vh);
+    -moz-transform: translate(18.150vw, 71.78vh);
+    -ms-transform: translate(18.150vw, 71.78vh);
+    -o-transform: translate(18.150vw, 71.78vh);
 }
-
+  to {
+    transform: translate(18.20vw, 100vh);
+    -webkit-transform: translate(18.20vw, 100vh);
+    -moz-transform: translate(18.20vw, 100vh);
+    -ms-transform: translate(18.20vw, 100vh);
+    -o-transform: translate(18.20vw, 100vh);
+}
+}
 
 .snow:nth-child(4) {
-  transform: translate(18.1453vw, -10px) scale(0.85);
-  animation: fall-3 7s -24s linear infinite;
-  -webkit-animation: fall-3 7s -24s linear infinite;
-  -webkit-transform: translate(18.1453vw, -10px) scale(0.85);
-  -moz-transform: translate(18.1453vw, -10px) scale(0.85);
-  -ms-transform: translate(18.1453vw, -10px) scale(0.85);
-  -o-transform: translate(18.1453vw, -10px) scale(0.85);
+  transform: translate(80.290vw, -10px) scale(0.7);
+  animation: fall-4 7s -24s linear infinite;
+  -webkit-animation: fall-4 7s -24s linear infinite;
+  -webkit-transform: translate(80.290vw, -10px) scale(0.7);
+  -moz-transform: translate(80.290vw, -10px) scale(0.7);
+  -ms-transform: translate(80.290vw, -10px) scale(0.7);
+  -o-transform: translate(80.290vw, -10px) scale(0.7);
 }
 @keyframes fall-4 {
-  71.78% {
-    transform: translate(vw, 71.78vh) scale(0.9984);
-    -webkit-transform: translate(vw, 71.78vh) scale(0.9984);
-    -moz-transform: translate(vw, 71.78vh) scale(0.9984);
-    -ms-transform: translate(vw, 71.78vh) scale(0.9984);
-    -o-transform: translate(vw, 71.78vh) scale(0.9984);
+  30.5% {
+    transform: translate(80.295vw, 30.5vh);
+    -webkit-transform: translate(80.295vw, 30.5vh);
+    -moz-transform: translate(80.295vw, 30.5vh);
+    -ms-transform: translate(80.295vw, 30.5vh);
+    -o-transform: translate(80.295vw, 30.5vh);
 }
   to {
-    transform: translate(70.1307vw, 100vh) scale(0.9984);
-    -webkit-transform: translate(70.1307vw, 100vh) scale(0.9984);
-    -moz-transform: translate(70.1307vw, 100vh) scale(0.9984);
-    -ms-transform: translate(70.1307vw, 100vh) scale(0.9984);
-    -o-transform: translate(70.1307vw, 100vh) scale(0.9984);
+    transform: translate(80.00vw, 100vh);
+    -webkit-transform: translate(80.00vw, 100vh);
+    -moz-transform: translate(80.00vw, 100vh);
+    -ms-transform: translate(80.00vw, 100vh);
+    -o-transform: translate(80.00vw, 100vh);
 }
 }
-
 
 .snow:nth-child(5) {
-  transform: translate(18.1453vw, -10px) scale(0.85);
-  animation: fall-3 7s -24s linear infinite;
-  -webkit-animation: fall-3 7s -24s linear infinite;
-  -webkit-transform: translate(18.1453vw, -10px) scale(0.85);
-  -moz-transform: translate(18.1453vw, -10px) scale(0.85);
-  -ms-transform: translate(18.1453vw, -10px) scale(0.85);
-  -o-transform: translate(18.1453vw, -10px) scale(0.85);
+  transform: translate(70.5vw, -10px);
+  animation: fall-5 7s -24s linear infinite;
+  -webkit-animation: fall-5 4s -28s linear infinite;
+  -webkit-transform: translate(70.5vw, -10px);
+  -moz-transform: translate(70.5vw, -10px);
+  -ms-transform: translate(70.5vw, -10px);
+  -o-transform: translate(70.5vw, -10px);
 }
 @keyframes fall-5 {
-  71.78% {
-    transform: translate(22.1161vw, 71.78vh) scale(0.9984);
-  }
-  to {
-    transform: translate(20.1307vw, 100vh) scale(0.9984);
-  }
+  86.8% {
+    transform: translate(70.7vw, 86.8vh);
+    -webkit-transform: translate(70.7vw, 86.8vh);
+    -moz-transform: translate(70.7vw, 86.8vh);
+    -ms-transform: translate(70.7vw, 86.8vh);
+    -o-transform: translate(70.7vw, 86.8vh);
 }
-
+  to {
+    transform: translate(71.5vw, 100vh);
+    -webkit-transform: translate(71.5vw, 100vh);
+    -moz-transform: translate(71.5vw, 100vh);
+    -ms-transform: translate(71.5vw, 100vh);
+    -o-transform: translate(71.5vw, 100vh);
+}
+}
 
 .snow:nth-child(6) {
-  transform: translate(18.1453vw, -10px) scale(0.85);
-  animation: fall-3 7s -24s linear infinite;
-  -webkit-animation: fall-3 7s -24s linear infinite;
-  -webkit-transform: translate(18.1453vw, -10px) scale(0.85);
-  -moz-transform: translate(18.1453vw, -10px) scale(0.85);
-  -ms-transform: translate(18.1453vw, -10px) scale(0.85);
-  -o-transform: translate(18.1453vw, -10px) scale(0.85);
+  transform: translate(90.5vw, -10px);
+  animation: fall-6 6s -27s linear infinite;
+  -webkit-animation: fall-6 6s -27s linear infinite;
+  -webkit-transform: translate(90.5vw, -10px);
+  -moz-transform: translate(90.5vw, -10px);
+  -ms-transform: translate(90.5vw, -10px);
+  -o-transform: translate(90.5vw, -10px);
 }
 @keyframes fall-6 {
-  71.78% {
-    transform: translate(22.1161vw, 71.78vh) scale(0.9984);
-  }
+  70.8% {
+    transform: translate(90.8vw, 70.8vh);
+    -webkit-transform: translate(90.8vw, 70.8vh);
+    -moz-transform: translate(90.8vw, 70.8vh);
+    -ms-transform: translate(90.8vw, 70.8vh);
+    -o-transform: translate(90.8vw, 70.8vh);
+}
   to {
-    transform: translate(20.1307vw, 100vh) scale(0.9984);
-  }
+    transform: translate(91.2vw, 100vh);
+    -webkit-transform: translate(91.2vw, 100vh);
+    -moz-transform: translate(91.2vw, 100vh);
+    -ms-transform: translate(91.2vw, 100vh);
+    -o-transform: translate(91.2vw, 100vh);
+}
 }
 
 
@@ -1802,16 +1844,6 @@ Add some clouds:*/
   to { transform:rotate( 35deg ); -webkit-transform:rotate( 35deg ); -moz-transform:rotate( 35deg ); -ms-transform:rotate( 35deg ); -o-transform:rotate( 35deg ); }
 }
 
-      
-      
-    @keyframes tapfeet; -webkit-transform:translate(-40px,0px); -moz-transform:translate(-40px,0px); -ms-transform:translate(-40px,0px); -o-transform:translate(-40px,0px);
-{
-        10%{}
-        20%{}
-        30%{}
-        40%{}
-      } */
-
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other and enlarge Thomas Family photo home page */
 
@@ -1821,17 +1853,7 @@ Add some clouds:*/
     flex-direction: column;
   }
 
-  .blogPhotoDivNovember {
-    display: flex;
-    flex-direction: column;
-  }
-
   .datenewsDiv{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .datenewsDivNovember{
     display: flex;
     flex-direction: column;
   }
@@ -1936,26 +1958,67 @@ Add some clouds:*/
     -o-border-radius: 15%;
     border-radius: 15%;
   }
-
+}
   /* On screens that are 1200px wide or less, adjust the height of the November firework display */
-@media screen and (max-width: 900px)
-
+@media screen and (max-width: 1200px)
+  {
   .blogDivNovemberHeader{
-    border:solid #757c88 4px;
-    background-color:#e47127;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    padding-top: 20px;
-    padding-bottom:20px;
-    margin-top:30vh;
   }
   
 }
 
 
 
+ /* On screens that are 1200px wide or less,  make the menu links and photo displays stack on top of each other instead of next to each other*/
 
+ @media screen and (max-width: 1200px)
+ {
+  #November_header{
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content:center;
+  }
+  
+  .blogDivNovemberHeader{
+    border:solid #757c88 4px;
+    background-color:#e47127;
+    display:flex;
+    flex-direction:column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 90vh;
+  }
+  
+  .blogDivNovember{
+    border:solid #757c88 4px;
+    background-color:#682702 ;
+    display:flex;
+    flex-direction:column;
+    margin-top: 10vh;
+    margin-bottom:5vh;
+  }
+  
+  .dateNovember, .newsNovember{
+    color:white;
+    border:solid 3px #757c88;
+    background-color: 	 	#773f3f;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    margin:5px;
+    font-size:medium;
+  }
+  
+  .blogPhotoDivNovember{
+    display:flex;
+    flex-direction:column;
+    background-color: #395A42;
+    padding-bottom: 15%;
+    padding-top: 5%;
+    margin-top:2%;
 
+}
 
 
