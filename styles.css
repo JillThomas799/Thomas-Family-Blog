@@ -1231,176 +1231,21 @@ Add some clouds:*/
   margin-left:50vw;
 }
 
-/*Snowfall animation*/
-.snowfallAnimation{
-  z-index:1;
+
+.December_2023_header
+{
+  background:black;
+  height:80%;
+  border:10px solid green;
+  border-radius:30%;
+  padding:10% 5%;
+  -webkit-border-radius:30%;
+  -moz-border-radius:30%;
+  -ms-border-radius:30%;
+  -o-border-radius:30%;
 }
 
-.snow {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: white;
-  border-radius: 50%;
-}
-
-.snow:nth-child(1) {
-  transform: translate(56.5936vw, -10px) scale(0.8);
-  animation: fall-1 15s -16s linear infinite;
-  -webkit-animation: fall-1 6s -27s linear infinite;
-  -webkit-transform: translate(56.5936vw, -10px) scale(0.8);
-  -moz-transform: translate(56.5936vw, -10px) scale(0.8);
-  -ms-transform: translate(56.5936vw, -10px) scale(0.8);
-  -o-transform: translate(56.5936vw, -10px) scale(0.8);
-}
-@keyframes fall-1 {
-  34.585% {
-    transform: translate(57.9903vw, 34.585vh) ;
-    -webkit-transform: translate(57.9903vw, 34.585vh) ;
-    -moz-transform: translate(57.9903vw, 34.585vh) ;
-    -ms-transform: translate(57.9903vw, 34.585vh) ;
-    -o-transform: translate(57.9903vw, 34.585vh) ;
-}
-  to {
-    transform: translate(57.29195vw, 100vh);
-    -webkit-transform: translate(57.29195vw, 100vh);
-    -moz-transform: translate(57.29195vw, 100vh);
-    -ms-transform: translate(57.29195vw, 100vh);
-    -o-transform: translate(57.29195vw, 100vh);
-}
-}
-.snow:nth-child(2) {
-  transform: translate(38.6106vw, -10px);
-  animation: fall-2 7s -21s linear infinite;
-  -webkit-transform: translate(38.6106vw, -10px));
-  -moz-transform: translate(38.6106vw, -10px));
-  -ms-transform: translate(38.6106vw, -10px));
-  -o-transform: translate(38.6106vw, -10px));
-  -webkit-animation: fall-2 7s -21s linear infinite;
-}
-@keyframes fall-2 {
-  70.443% {
-    transform: translate(37.0175vw, 70.443vh);
-    -webkit-transform: translate(37.0175vw, 70.443vh);
-    -moz-transform: translate(37.0175vw, 70.443vh);
-    -ms-transform: translate(37.0175vw, 70.443vh);
-    -o-transform: translate(37.0175vw, 70.443vh);
-}
-  to {
-    transform: translate(37.81405vw, 100vh);
-    -webkit-transform: translate(37.81405vw, 100vh);
-    -moz-transform: translate(37.81405vw, 100vh);
-    -ms-transform: translate(37.81405vw, 100vh);
-    -o-transform: translate(37.81405vw, 100vh);
-}
-}
-.snow:nth-child(3) {
-  transform: translate(18.1453vw, -10px);
-  animation: fall-3 7s -24s linear infinite;
-  -webkit-animation: fall-3 8s -25s linear infinite;
-  -webkit-transform: translate(18.1453vw, -10px);
-  -moz-transform: translate(18.1453vw, -10px);
-  -ms-transform: translate(18.1453vw, -10px);
-  -o-transform: translate(18.1453vw, -10px);
-}
-@keyframes fall-3 {
-  71.78% {
-    transform: translate(18.150vw, 71.78vh);
-    -webkit-transform: translate(18.150vw, 71.78vh);
-    -moz-transform: translate(18.150vw, 71.78vh);
-    -ms-transform: translate(18.150vw, 71.78vh);
-    -o-transform: translate(18.150vw, 71.78vh);
-}
-  to {
-    transform: translate(18.20vw, 100vh);
-    -webkit-transform: translate(18.20vw, 100vh);
-    -moz-transform: translate(18.20vw, 100vh);
-    -ms-transform: translate(18.20vw, 100vh);
-    -o-transform: translate(18.20vw, 100vh);
-}
-}
-
-.snow:nth-child(4) {
-  transform: translate(80.290vw, -10px) scale(0.7);
-  animation: fall-4 7s -24s linear infinite;
-  -webkit-animation: fall-4 7s -24s linear infinite;
-  -webkit-transform: translate(80.290vw, -10px) scale(0.7);
-  -moz-transform: translate(80.290vw, -10px) scale(0.7);
-  -ms-transform: translate(80.290vw, -10px) scale(0.7);
-  -o-transform: translate(80.290vw, -10px) scale(0.7);
-}
-@keyframes fall-4 {
-  30.5% {
-    transform: translate(80.295vw, 30.5vh);
-    -webkit-transform: translate(80.295vw, 30.5vh);
-    -moz-transform: translate(80.295vw, 30.5vh);
-    -ms-transform: translate(80.295vw, 30.5vh);
-    -o-transform: translate(80.295vw, 30.5vh);
-}
-  to {
-    transform: translate(80.00vw, 100vh);
-    -webkit-transform: translate(80.00vw, 100vh);
-    -moz-transform: translate(80.00vw, 100vh);
-    -ms-transform: translate(80.00vw, 100vh);
-    -o-transform: translate(80.00vw, 100vh);
-}
-}
-
-.snow:nth-child(5) {
-  transform: translate(70.5vw, -10px);
-  animation: fall-5 7s -24s linear infinite;
-  -webkit-animation: fall-5 4s -28s linear infinite;
-  -webkit-transform: translate(70.5vw, -10px);
-  -moz-transform: translate(70.5vw, -10px);
-  -ms-transform: translate(70.5vw, -10px);
-  -o-transform: translate(70.5vw, -10px);
-}
-@keyframes fall-5 {
-  86.8% {
-    transform: translate(70.7vw, 86.8vh);
-    -webkit-transform: translate(70.7vw, 86.8vh);
-    -moz-transform: translate(70.7vw, 86.8vh);
-    -ms-transform: translate(70.7vw, 86.8vh);
-    -o-transform: translate(70.7vw, 86.8vh);
-}
-  to {
-    transform: translate(71.5vw, 100vh);
-    -webkit-transform: translate(71.5vw, 100vh);
-    -moz-transform: translate(71.5vw, 100vh);
-    -ms-transform: translate(71.5vw, 100vh);
-    -o-transform: translate(71.5vw, 100vh);
-}
-}
-
-.snow:nth-child(6) {
-  transform: translate(90.5vw, -10px);
-  animation: fall-6 6s -27s linear infinite;
-  -webkit-animation: fall-6 6s -27s linear infinite;
-  -webkit-transform: translate(90.5vw, -10px);
-  -moz-transform: translate(90.5vw, -10px);
-  -ms-transform: translate(90.5vw, -10px);
-  -o-transform: translate(90.5vw, -10px);
-}
-@keyframes fall-6 {
-  70.8% {
-    transform: translate(90.8vw, 70.8vh);
-    -webkit-transform: translate(90.8vw, 70.8vh);
-    -moz-transform: translate(90.8vw, 70.8vh);
-    -ms-transform: translate(90.8vw, 70.8vh);
-    -o-transform: translate(90.8vw, 70.8vh);
-}
-  to {
-    transform: translate(91.2vw, 100vh);
-    -webkit-transform: translate(91.2vw, 100vh);
-    -moz-transform: translate(91.2vw, 100vh);
-    -ms-transform: translate(91.2vw, 100vh);
-    -o-transform: translate(91.2vw, 100vh);
-}
-}
-
-
-
-/*Creation of moon*/
+/*Creation of moon January 2024 header*/
 .moon{
   position:absolute;
   height:80px;
@@ -1532,14 +1377,18 @@ Add some clouds:*/
   background-color:white;
   z-index:2;
   border:0.5px solid black;
-  border-radius:40%;
+  border-radius:32%;
   margin:auto;
   margin-bottom:10%;
   animation-name:bodyRotate;
-    animation-duration:1s;
-    animation-iteration-count:infinite;
-    animation-timing-function:linear;
-    animation-direction:alternate;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-direction:alternate;
+  -webkit-border-radius:32%;
+  -moz-border-radius:32%;
+  -ms-border-radius:32%;
+  -o-border-radius:32%;
 }
 
 .arm.right{
