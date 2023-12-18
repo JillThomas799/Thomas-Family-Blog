@@ -1,3 +1,6 @@
+Family Blog- 18th December 2023- all scripting(HTML,SVG and CSS) for the January 2024 webpage :
+
+
 body{
   display:flex;
   flex-direction:column;
@@ -465,10 +468,6 @@ article{
 .black {
   background-color:black;
   
-}
-
-.wintergray{
-  background-color: #a4a4aC;
 }
 
 .AquamarineBlue{
@@ -1975,12 +1974,7 @@ Add some clouds:*/
         top:30%;
         margin-left:25%;}}
       }
-    }
 
-    @media screen and (min-width:400px) and (max-width: 600px) {
-      .January2024_header{
-       height:50vh;
-      }
   }
   
   @media screen and (max-width: 400px) {
@@ -2045,3 +2039,498 @@ Add some clouds:*/
   
   
 
+HTML and SVG:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="styles\main.css"> 
+
+    <title>January 2024</title>
+</head>
+
+<body class="midnightblue" style="background-color:#a4a4aC">
+    <div class="January2024_header"> <!--Opening tag for January header-->
+  
+            <button id="button" title="Click here to open dropdown menu" onclick="myFunction()"><span id="menuUnderline">Menu</span></button>
+            <div id="myDiv">
+                <ul>
+                    <li><a class = "button" href = "index.html#button" title = "Click here to return to menu button "><span class="text">Menu:</span></a></li>
+                    <li><a class = "About-us" href = "index.html#about_us" title = "Click here to find out more about us "><span class="text">About us</span></a></li>
+                    <li><a class="Members" href = "index.html#Members" title = "Click here to go to find out more about the individual family members"><span class="text">Members</span></a></li>
+                    <!-- <br>
+                    <br> -->
+                    <li><div class="text_left_align" >Choose month/event:</div></li>
+                </ul>
+                        <div id="menu">
+                            <ul>
+                                    <li><a class="nav-link" href = "April_2023.html"  title = "Click here to go to April 2023 blogs">April 2023</a></li>
+                                    <li><a class="nav-link" href = "May_2023.html"  title = "Click here to go to May 2023 blogs">May 2023</a></li>
+                                    <li><a class="nav-link" href = "June_2023.html" id="menu" title = "Click here to go to June 2023 blogs">June 2023</a></li>
+                                    <li><a class="nav-link" href = "Auvergne_holiday.html" id="menu" title = "Click here to go to Auvergne holiday, June 2023">Auvergne holiday</a></li>
+                                    <li><a class="nav-link" href = "July_2023.html" id="menu" title = "Click here to go to July 2023 blogs">July 2023</a></li>
+                                    <li><a class="nav-link" href = "August_2023.html" id="menu" title = "Click here to go to August 2023 blogs">August 2023</a></li>
+                                    <li><a class="nav-link" href = "September_2023.html" id="menu" title = "Click here to go to September 2023 blogs">September 2023</a></li>
+                                    <li><a class="nav-link" href = "October_2023.html" id="menu" title = "Click here to go to October 2023 blogs">October 2023</a></li>
+                                    <li><a class="nav-link" href=  "Wales_holiday_2023.html" id="menu" title = "Click here to go to Wales holiday, October 2023">Wales holiday October 2023</a></li>
+                                    <li><a class="nav-link" href = "November_2023.html" id="menu" title = "Click here to go to November 2023 blogs">November 2023</a></li>
+                                    <li><a class="nav-link" href = "December_2023.html" id="menu" title = "Click here to go to December 2023 blogs">December 2023</a></li>
+                                    <li><a class="nav-link" href = "January_2024.html" id="menu" title = "Click here to go to January 2024 blogs">January 2024</a></li>
+                            </ul>
+                        </div>
+           
+                        <script>
+                            function myFunction() {
+                            var x = document.getElementById("myDiv");
+                            if (x.style.visibility === 'hidden') {
+                                x.style.visibility = 'visible';
+                            } else {
+                                x.style.visibility = 'hidden';
+                            }
+                            }        
+                        </script>
+            </div>
+                
+            
+
+<!--snowfall animation-->
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+    
+
+      
+ <div class="moon"></div> <!-- Closing tab for #moon-->
+
+        <div class="star">
+            <style>
+                .star{
+                    position:absolute;
+                    left:30%;
+                    font-size: 0.25em;
+                    }
+            </style>
+
+        <div class="star1">
+            <style>
+                .star1 {
+                --star-color:white;
+                top:20px;
+                right:5vw;
+                margin:0.1em auto;
+                font-size:1em;
+                position: absolute;
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(35deg);
+                }
+
+                .star1::before {     /*The ::before selector inserts something before the content of each selected element(s).*/
+                border-bottom: 0.8em solid var(--star-color);
+                border-left: 0.3em solid transparent;
+                border-right: 0.3em solid transparent;
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -0.45em;
+                left: -0.65em;
+                display: block;
+                content:"";
+                transform: rotate(-35deg);
+                }
+
+                .star1::after {       /*The ::after selector inserts something after the content of each selected element(s).*/
+                position: absolute;
+                display: block;
+                top: 0.03em;
+                left: -1.05em;
+                width: 0;
+                height: 0;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(-70deg);
+                content:"";
+                }
+            </style>
+        </div>
+
+        <div class="star2">
+            <style>
+                .star2 {
+                --star-color:white;
+                top:5vh;
+                right:10vw;
+                margin:0.1em auto;
+                font-size:1em;
+                position: absolute;
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(35deg);
+                }
+
+                .star2::before {     /*The ::before selector inserts something before the content of each selected element(s).*/
+                border-bottom: 0.8em solid var(--star-color);
+                border-left: 0.3em solid transparent;
+                border-right: 0.3em solid transparent;
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -0.45em;
+                left: -0.65em;
+                display: block;
+                content:"";
+                transform: rotate(-35deg);
+                }
+
+                .star2::after {       /*The ::after selector inserts something after the content of each selected element(s).*/
+                position: absolute;
+                display: block;
+                top: 0.03em;
+                left: -1.05em;
+                width: 0;
+                height: 0;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(-70deg);
+                content:"";
+                }
+            </style>
+        </div>
+
+        <div class="star3">
+            <style>
+                .star3 {
+                --star-color:white;
+                top:10vh;
+                left:30vw;
+                margin:0.1em auto;
+                font-size:1em;
+                position: absolute;
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(35deg);
+                }
+
+                .star3::before {     /*The ::before selector inserts something before the content of each selected element(s).*/
+                border-bottom: 0.8em solid var(--star-color);
+                border-left: 0.3em solid transparent;
+                border-right: 0.3em solid transparent;
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -0.45em;
+                left: -0.65em;
+                display: block;
+                content:"";
+                transform: rotate(-35deg);
+                }
+
+                .star3::after {       /*The ::after selector inserts something after the content of each selected element(s).*/
+                position: absolute;
+                display: block;
+                top: 0.03em;
+                left: -1.05em;
+                width: 0;
+                height: 0;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(-70deg);
+                content:"";
+                }
+            </style>
+        </div>
+
+        <div class="star4">
+            <style>
+                .star4 {
+                --star-color:white;
+                top:20vh;
+                right:25vw;
+                margin:0.1em auto;
+                font-size:1em;
+                position: absolute;
+                display: block;
+                width: 0px;
+                height: 0px;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(35deg);
+                }
+
+                .star4::before {     /*The ::before selector inserts something before the content of each selected element(s).*/
+                border-bottom: 0.8em solid var(--star-color);
+                border-left: 0.3em solid transparent;
+                border-right: 0.3em solid transparent;
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -0.45em;
+                left: -0.65em;
+                display: block;
+                content:"";
+                transform: rotate(-35deg);
+                }
+
+                .star4::after {       /*The ::after selector inserts something after the content of each selected element(s).*/
+                position: absolute;
+                display: block;
+                top: 0.03em;
+                left: -1.05em;
+                width: 0;
+                height: 0;
+                border-right: 1em solid transparent;
+                border-bottom: 0.7em solid var(--star-color);
+                border-left: 1em solid transparent;
+                transform: rotate(-70deg);
+                content:"";
+                }
+            </style>
+        </div>
+
+
+    </div> <!--Closing tag for .star-->
+
+    <div class="January_2024_title">January 2024</div>
+
+        <div class="snowman"> <!--Opening tag for snowman-->
+            <div class="snowman-Head">  <!--Opening tag for snowman-Head-->
+                <div class="smnHatmain"></div> <!--.smnHatmain element-->
+                <div class="smnHatbrim"></div> <!--.smnHatbrim element-->
+                <div class="eye left"><div class="eye-lid"></div></div> <!--.eye.right and .eye-lid elements-->
+                  <div class="eye right"><div class="eye-lid"></div></div>  <!--.eye.left and .eye-lid elements-->
+                <div class="nose"></div> <!--nose element-->
+                <div class="mouth"></div> <!--mouth element-->
+                <div class="Scarf"></div> <!--scarf element-->
+           </div> <!--Closing tag for .snowmanHead-->
+
+            <div class="snowmanBody">   <!--Opening tag for snowmanBody-->
+                <div class="arm right"></div> <!--arm right element -->
+                <div class="forearm right"></div> <!--forearm right element -->
+                <div class="glove right"></div> <!--glove right element-->
+                <div class="arm left"></div> <!--arm left element -->
+                <div class="forearm left"></div> <!--forearm left element -->
+                <div class="glove left"></div> <!--glove left element-->
+                <div class="buttons">
+                <div class="button1"></div> <!--button element-->
+                <div class="button2"></div> <!--button element-->
+                <div class="button3"></div> <!--button element-->
+                </div>
+            </div> <!--Closing tag for snowmanBody-->
+            
+            <!--snowman feet elements-->
+            <div class="foot right"></div> 
+            <div class="foot left"></div>
+        </div> <!--Closing tag for snowman-->
+
+        <!--Add in lennie-cat-->
+
+        <svg class="lennie-cat" version="1.1" x="0" y="0" width="100vw" height="75vh" viewbox="-80 -90 500 560">
+            <g class="lennie-cat" 
+            xmlns="http://www.w3.org/2000/svg"  
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            </g>
+                    <defs>
+                        <linearGradient id="gradbody" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#5C4033;stop-opacity:1" />
+                            <stop offset="30%" style="stop-color:#B87333;stop-opacity:1" />
+                            <stop offset="40%" style="stop-color:#5C4033;stop-opacity:1" /> 
+                            <stop offset="90%" style="stop-color:#B87333;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color: 	#C2B280;stop-opacity:1" /> 
+                    </linearGradient>
+                    <linearGradient id="gradlegs" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#5C4033;stop-opacity:1" />
+                        <stop offset="30%" style="stop-color:#B87333;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#5C4033;stop-opacity:1" /> 
+                        <stop offset="60%" style="stop-color:#B87333;stop-opacity:1" />
+                        <stop offset="70%" style="stop-color:#5C4033;stop-opacity:1" /> 
+                        <stop offset="100%" style="stop-color:white;stop-opacity:1" /> 
+                </linearGradient>
+                <linearGradient id="gradhead" x1="10%" y1="0%" x2="30%" y2="100%">
+                    <stop offset="0%" style="stop-color:black;stop-opacity:1" />
+                    <stop offset="40%" style="stop-color:#5C4033;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#5C4033;stop-opacity:1" /> 
+                    <stop offset="60%" style="stop-color:#B87333;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:white;stop-opacity:1" /> 
+            </linearGradient>
+            <radialGradient id="gradears" cx="50%" cy="60%" r="50%" fx="50%" fy="80%">
+                <stop offset="0%" style="stop-color:#f3e2d6;stop-opacity:1" />  
+                <stop offset="100%" style="stop-color:#5C4033;stop-opacity:1" />
+              </radialGradient>
+            
+              <filter id="blur1" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+              </filter>
+    
+              <linearGradient id="gradnose" x1="0%" y1="70%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#5C4033;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#f3e2d6;stop-opacity:1" />
+              </linearGradient>
+
+            <style>
+                @media screen and (max-width: 369px) {
+                    .lennie-cat{
+                        width:"60vw";
+                        height:40vh;
+                        margin-top:200px;
+                        margin-left:15px;
+                    }
+                    }
+
+                    @media screen and (min-width: 370px) and (max-width: 378px) {
+                        .lennie-cat{
+                            width:"60vw";
+                            height:40vh;
+                            margin-top:210px;
+                            margin-left:15px;
+                        }
+                        }
+                @media screen and (min-width: 379px) and (max-width: 399px) {
+                    .lennie-cat{
+                        width:"60vw";
+                        height:40vh;
+                        margin-top:250px;
+                        margin-left:15px;
+                    }
+                    }
+                @media screen and (min-width: 400px) and (max-width: 798px) {
+                    .lennie-cat{
+                        width:"60vw";
+                        height:40vh;
+                        margin-top:290px;
+                        margin-left:20px;
+                    }
+                    }
+
+                @media screen and (min-width: 799px) and (max-width: 1200px) {
+                .lennie-cat{
+                    width:"60vw";
+                    height:40vh;
+                    margin-top:370px;
+                    margin-left:130px;
+                }
+                }
+
+                @media screen and (min-width: 1201px) and (max-width: 1281px) {
+                    .lennie-cat{
+                        width:"60vw";
+                        height:40vh;
+                        margin-top:130px;
+                        margin-left:100px;
+                        transform:scale(1.7);
+                    }
+                    }
+            </style>
+            
+            </defs>
+            
+                    <g class="lennielegs">
+                    <rect id="lennielegleft" x="240" y="270" width="65" height="15" rx="5" ry="5" fill="url(#gradlegs)"/>
+                    <rect id="lennielegright" x="240" y="290" width="75" height="15" rx="5" ry="5" fill="url(#gradlegs)"/> 
+                    </g>
+                   
+                    <ellipse id="cattail" cx="190" cy="299" rx="50" ry="25" fill="url(#gradbody)" stroke="#5c4033" stoke-width="1" transform="rotate(12,187,299)"/>
+                    <ellipse id="catbody" cx="200" cy="280" rx="60" ry="30" fill="url(#gradbody)" stroke="#5c4033" stroke-width="1" />
+                   
+                    <g class="cathead">
+                    <ellipse id="cathead" cx="260" cy="275" rx="25" ry="23" fill="url(#gradhead)" stroke="none" transform="rotate(0,30,0)"/>
+                    
+                    <ellipse id="cateyeleft"cx="275" cy="276" rx="5" ry="3" fill="black"  stroke-width="1.5" opacity="0.8" transform="rotate(-35deg)"/>
+                    <ellipse id="cateyeright" cx="254" cy="276" rx="5" ry="3" fill="black"  stroke-width="1.5" opacity="0.8" transform="rotate(-35deg)"/>
+    
+                    <line id="facialline1" x1="256" y1="255" x2="261" y2="276" stroke="#5c4033" stroke-width="2" stroke-linecap="round" opacity="1" />
+                    <line id="facialline2" x1="262" y1="255" x2="264" y2="276" stroke="#5c4033" stroke-width="3" stroke-linecap="round" opacity="1" />
+                    <line id="facialline3" x1="266" y1="255" x2="267" y2="276" stroke="#5c4033" stroke-width="2" stroke-linecap="round" opacity="1" />
+                   
+                    <line id="whiskerright1" x1=254 y1=285 x2=214 y2=298 stroke="white" stroke-width="0.5"/>
+                    <line id="whiskerright2" x1=252 y1=283 x2=212 y2=292 stroke="white" stroke-width="0.5"/>
+                    <line id="whiskerright3" x1=254 y1=287 x2=212 y2=313 stroke="white" stroke-width="0.5"/>
+    
+                    <line id="whiskerleft1" x1=271 y1=285 x2=311 y2=298 stroke="white" stroke-width="0.5"/>
+                    <line id="whiskerleft2" x1=272 y1=283 x2=312 y2=292 stroke="white" stroke-width="0.5"/>
+                    <line id="whiskerleft3" x1=271 y1=287 x2=310 y2=313 stroke="white" stroke-width="0.5"/>
+    
+                    
+                     <polygon id="earleft"points="264,265 276,248 282,265" style="stroke:#5C4033;stroke-width:1.5;" transform=rotate(30,20,40);" fill="url(#gradears)" opacity="0.9" />
+                     <polygon id="earright"points="238,265 250,248 256,265" style="stroke:#5C4033;stroke-width:1.5;" transform=rotate(30,20,40);" fill="url(#gradears)" opacity="0.9" />
+                
+                     <line id="noseright" x1="258" y1="276" x2="259" y2="285" stroke="#5c4033" stroke-width="1.5" opacity="0.6" fill="url(#gradnose)"/>
+                     <line id="noseleft" x1="269" y1="276" x2="268" y2="285" stroke="#5c4033" stroke-width="1.5" opacity="0.6" fill="url(#gradnose)"/>
+    
+                     <ellipse id="nostrilright" cx="262" cy="285" rx="1.3" ry="0.8" fill="#5C4033" opacity="0.5" />
+                     <ellipse id="nostrilleft" cx="265.5" cy="285" rx="1.3" ry="0.8" fill="#5C4033" opacity="0.5" />
+                
+                     <line id="mouthnasal" x1="263.5" y1="287" x2="263.5" y2="291" stroke="#5c4033" stroke-width="1.5" opacity="0.6" />
+                     <line id="mouthright" x1="257.5" y1="292" x2="263.5" y2="293" stroke="#5c4033" stroke-width="1.5" opacity="0.7" />
+                     <line id="mouthleft" x1="263.5" y1="293" x2="269.5" y2="292" stroke="#5c4033" stroke-width="1.5" opacity="0.7" />
+                     <rect id="mouthtongue" x="260.4" y="291.5" width="9.5" height="11" rx="5" ry="5" fill="#F19E93" stroke="black" stroke-width="0.5"/>
+                    </g>;
+    </>
+            
+
+    </div> <!--Closing div for January2024_header-->
+
+        <div class="datenewsDiv" style="margin-top:5%;">
+                <section class = "date" style="background-color:#64696c;" ><strong>1st - 31st January 2024</strong></section>
+                <section class = "news" style="background-color:#64696c"><strong color="white">Happy New Year to everyone. Entries will follow in 2024! Hope you like the animated dancing snowman in the snow scene.</strong> 
+                    <br><br>
+                </section>   
+        </div>       
+    
+</body>
+</html>

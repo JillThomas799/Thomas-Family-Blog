@@ -1,3 +1,5 @@
+Snowman CSS on 15.12.2023
+
 body{
   display:flex;
   flex-direction:column;
@@ -465,10 +467,6 @@ article{
 .black {
   background-color:black;
   
-}
-
-.wintergray{
-  background-color: #a4a4aC;
 }
 
 .AquamarineBlue{
@@ -1216,16 +1214,11 @@ Add some clouds:*/
 
 /*CSS for the January 2024 header of animated snowman scene*/
 .January2024_header{
-  background: linear-gradient(180deg,rgb(36,60,62) 65%,#F2F3F5, snow );
-  height:70vh;
-  /*--nowidthpropertyrequired,allowingthewidthtoautosetonwhateverdevice*/
+  background: linear-gradient(180deg,rgb(36,60,62) 70%, snow,white);
+  height:70vh; 
+   /*--no width property required, allowing the width to auto set on whatever device*/
   border:solid black 2px;
   position:relative;
-  border-radius:16%;
-  -webkit-border-radius:16%;
-  -moz-border-radius:16%;
-  -ms-border-radius:16%;
-  -o-border-radius:16%;
 }
 
 .January_2024_title{
@@ -1236,8 +1229,8 @@ Add some clouds:*/
   border: 0;    /*Removes border which is around the h1 element on other blog pages as not required here*/
   margin:auto;   /*Centres the h1 title horizontally*/
   position:relative;
-  top:30%;
-  margin-left:50%;
+  top:20%;
+  margin-left:50vw;
 }
 
 
@@ -1387,8 +1380,8 @@ Add some clouds:*/
   width:70%;
   background-color:white;
   z-index:2;
-  /* border:0.2px solid black; */
-  border-radius:35%;
+  border:0.5px solid black;
+  border-radius:32%;
   margin:auto;
   margin-bottom:10%;
   animation-name:bodyRotate;
@@ -1396,10 +1389,10 @@ Add some clouds:*/
   animation-iteration-count:infinite;
   animation-timing-function:linear;
   animation-direction:alternate;
-  -webkit-border-radius:35%;
-  -moz-border-radius:35%;
-  -ms-border-radius:35%;
-  -o-border-radius:35%;
+  -webkit-border-radius:32%;
+  -moz-border-radius:32%;
+  -ms-border-radius:32%;
+  -o-border-radius:32%;
 }
 
 .arm.right{
@@ -1407,8 +1400,8 @@ Add some clouds:*/
   position:absolute;
   width:25%;
   height:38%;
-  background-color: #FAF9F6;
-  /* border:solid black 1px; */
+  background-color:white;
+  border:solid black 1px;
   border-radius:35%;
   top:7%;
   right:-5%;
@@ -1418,7 +1411,7 @@ Add some clouds:*/
   -moz-transform:rotate(-30deg);
   -ms-transform:rotate(-30deg);
   -o-transform:rotate(-30deg);
-  -webkit-border-radius:40%;
+  -webkit-border-radius:35%;
   -moz-border-radius:35%;
   -ms-border-radius:35%;
   -o-border-radius:35%;
@@ -1434,39 +1427,49 @@ Add some clouds:*/
   position:absolute;
   width:23%;
   height:35%;
-  background-color: #FAF9F6;
-  /* border:solid black 1px; */
+  background-color:white;
+  border:solid black 1px;
   border-radius:35%;
   top:7%;
-  left:-5%;
+  left:1%;
   z-index:1;
-  transform:rotate(-17deg);
-  -webkit-border-radius:40%;
-  -moz-border-radius:40%;
-  -ms-border-radius:40%;
-  -o-border-radius:40%;
+  transform:rotate(-20deg);
+  -webkit-border-radius:35%;
+  -moz-border-radius:35%;
+  -ms-border-radius:35%;
+  -o-border-radius:35%;
   animation-name: armleft;
   animation-duration:1s;
   animation-iteration-count:infinite;
   animation-timing-function:linear;
   animation-direction:alternate;
-  -webkit-transform:rotate(-17deg);
-  -moz-transform:rotate(-17deg);
-  -ms-transform:rotate(-17deg);
-  -o-transform:rotate(-17deg);
+  -webkit-transform:rotate(-20deg);
+  -moz-transform:rotate(-20deg);
+  -ms-transform:rotate(-20deg);
+  -o-transform:rotate(-20deg);
 }
 
 .forearm.right{
   content:"";
   position:absolute;
-  width:42%;
+  width:40%;
   height:17%;
-  background-color: #FAF9F6;
+  background-color:white;
   border-radius:35%;
-  /* border:solid black 1px; */
+  border:solid black 1px;
   top:25%;
-  right:49%;
+  right:46%;
   z-index:2;
+  /* transform:rotate(90 deg);
+  -webkit-transform:rotate(90 deg);
+  -moz-transform:rotate(90 deg);
+  -ms-transform:rotate(90 deg);
+  -o-transform:rotate(90 deg);
+  -webkit-border-radius:35%;
+  -moz-border-radius:35%;
+  -ms-border-radius:35%;
+  -o-border-radius:35%; */
+
   animation-name:forearmrightTransform;
   animation-duration:1s;
   animation-iteration-count:infinite;
@@ -1477,14 +1480,24 @@ Add some clouds:*/
 .forearm.left{
   content:"";
   position:absolute;
-  width:40%;
+  width:45%;
   height:20%;
-  background-color: #FAF9F6;
-  /* border:solid black 1px; */
+  background-color:white;
+  border:solid black 1px;
   border-radius: 35%;
   top:25%;
   left:50%;
   z-index:2;
+  /* transform:rotate(180 deg);
+  -webkit-transform:rotate(180 deg);
+  -moz-transform:rotate(180 deg);
+  -ms-transform:rotate(180 deg);
+  -o-transform:rotate(180 deg);
+  -webkit-border-radius: 35%;
+  -moz-border-radius: 35%;
+  -ms-border-radius: 35%;
+  -o-border-radius: 35%; */
+
   animation-name:forearmleftTransform;
   animation-duration:1s;
   animation-iteration-count:infinite;
@@ -1624,60 +1637,11 @@ Add some clouds:*/
         animation-timing-function:linear;
         animation-direction:alternate;
 }
-
-#cateyeleft{
-        animation-name:cateyesBlink;
-        animation-duration:1s;
-        animation-iteration-count:infinite;
-        animation-timing-function:linear;
-        animation-direction:alternate;
-}
-
-
-#cateyeright{
-  animation-name:cateyesBlink;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
-  animation-direction:alternate;
-}
-
-.cathead{
-        animation-name:catheadRotate;
-        animation-duration:1s;
-        animation-iteration-count:infinite;
-        animation-timing-function:linear;
-        animation-direction:alternate;
-      }
-
- /* #lennielegleft{
-  animation-name:stretchlennielegleft;
-        animation-duration:1s;
-        animation-iteration-count:infinite;
-        animation-timing-function:ease-in;
-        animation-direction:alternate;
- }  */
-
- #lennielegright{
-  animation-name:stretchlennielegright;
-        animation-duration:1s;
-        animation-iteration-count:infinite;
-        animation-timing-function:ease-in;
-        animation-direction:alternate;} 
-
-#mouthtongue{
-        animation-name:lickingtonguelennie;
-        animation-duration:1s;
-        animation-iteration-count:infinite;
-        animation-timing-function:ease-in;
-        animation-direction:alternate;
-      } 
- 
      
-        @keyframes headRotate{
-          10%{ transform:rotateZ(-2deg); -webkit-transform:rotateZ(-2deg); -moz-transform:rotateZ(-2deg); -ms-transform:rotateZ(-2deg); -o-transform:rotateZ(-2deg); }
-          20%{ transform:rotateZ(-6deg); -webkit-transform:rotateZ(-6deg); -moz-transform:rotateZ(-6deg); -ms-transform:rotateZ(-6deg); -o-transform:rotateZ(-6deg); }
-          } 
+      @keyframes headRotate{
+        10%{ transform:rotateZ(-2deg); -webkit-transform:rotateZ(-2deg); -moz-transform:rotateZ(-2deg); -ms-transform:rotateZ(-2deg); -o-transform:rotateZ(-2deg); }
+        20%{ transform:rotateZ(-6deg); -webkit-transform:rotateZ(-6deg); -moz-transform:rotateZ(-6deg); -ms-transform:rotateZ(-6deg); -o-transform:rotateZ(-6deg); }
+        } 
 
         @keyframes bodyRotate{
           10%{ transform:rotateZ(7deg); -webkit-transform:rotateZ(7deg); -moz-transform:rotateZ(7deg); -ms-transform:rotateZ(7deg); -o-transform:rotateZ(7deg); }
@@ -1733,27 +1697,6 @@ Add some clouds:*/
   to { transform:rotate( 35deg ); -webkit-transform:rotate( 35deg ); -moz-transform:rotate( 35deg ); -ms-transform:rotate( 35deg ); -o-transform:rotate( 35deg ); }
 }
 
-/*Set lennie-cat movement animations*/
-
-@keyframes catheadRotate{
-  from{ transform:translate(0deg); -webkit-transform:translate(0deg); -moz-transform:translate(0deg); -ms-transform:translate(0deg); -o-transform:translate(0deg); }
-  to{ transform:translate(-6px); -webkit-transform:translate(-6px); -moz-transform:translate(-6px); -ms-transform:translate(-6px); -o-transform:translate(-6px); }
-  } 
-
-@keyframes cateyesBlink{
-    from{ ry:2.5px;}
-    to{ ry:0.1px;}
-  }
-
-@keyframes stretchlennielegright{
-  from{ width:65px; }
-  to{width:75px;} 
-} 
-
-@keyframes lickingtonguelennie {
-  from{ height:12px;}
-  to{height:0px;}
-}
 
 /*FEBRUARY 2024 HEADER*/
 .February_2024_header{
@@ -1841,19 +1784,17 @@ Add some clouds:*/
     -o-border-radius:30px;
 }
 
-
 #menu ul{
   display:flex;
   flex-direction: column;
   width:100%;
 }
 
-
 #button{
   display:block;
   position:absolute;
   height:50px;
-  width:25%;
+  width:20%;
   background-color:gray;
   border:black 2px solid;
   text-align: center;
@@ -1901,6 +1842,7 @@ Add some clouds:*/
   }
   
 }
+
 
 
  /* On screens that are 1200px wide or less,  make the menu links and photo displays stack on top of each other instead of next to each other*/
@@ -1952,9 +1894,11 @@ Add some clouds:*/
     margin-top:2%;
  }
 
+ }
+
   /*Ensure title and snowman remains centred on all screens*/
   @media screen and (max-width: 600px) {
-   .snowman{ 
+    .snowman{ 
       height:165px;
       width:120px;
       position:absolute; 
@@ -1975,12 +1919,8 @@ Add some clouds:*/
         top:30%;
         margin-left:25%;}}
       }
-    }
-
-    @media screen and (min-width:400px) and (max-width: 600px) {
-      .January2024_header{
-       height:50vh;
-      }
+      
+  
   }
   
   @media screen and (max-width: 400px) {
@@ -2009,12 +1949,6 @@ Add some clouds:*/
     bottom:25%;
     }
 
-    .Lennie-cat{
-      left:60%;
-      height:auto;
-      width:auto;
-    }
-
   }
 
   @media screen and (min-width: 1201px) and (max-width: 1400px) {
@@ -2027,7 +1961,7 @@ Add some clouds:*/
       right:30%;
       bottom:30%;
       }
-
+  
     }
   
   @media screen and (min-width: 1401px) and (max-width: 3441px) {
