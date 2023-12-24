@@ -1924,6 +1924,15 @@ Add some clouds:*/
   -o-border-radius:15%;
 } 
 
+.footer ul{
+  list-style-type: none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+}
+}
+
 /* On screens that are 900px wide or less
 @media screen and (max-width: 900px){
   .January_2024_title{
