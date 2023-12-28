@@ -191,6 +191,12 @@ h2{
     display:block;
     color:white;
     text-align: center;
+    padding:5%;
+    /* border-radius:20%;
+    -webkit-border-radius:20%;
+    -moz-border-radius:20%;
+    -ms-border-radius:20%;
+    -o-border-radius:20%; */
 } 
 
 
@@ -204,6 +210,15 @@ h2{
 padding:10px;
 }
 
+#Members{
+  padding:5%;
+  /* border-radius:20%;
+  -webkit-border-radius:20%;
+  -moz-border-radius:20%;
+  -ms-border-radius:20%;
+  -o-border-radius:20%; */
+}
+
 #Members ul{
     font: size 1.0em;
     color:#92A8D1;
@@ -211,11 +226,11 @@ padding:10px;
     margin:10%;
     padding:5%;
     border:solid 3px;
-    border-radius: 15%;
-    -webkit-border-radius: 15%;
-    -moz-border-radius: 15%;
-    -ms-border-radius: 15%;
-    -o-border-radius: 15%; 
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
 }
 
 #Members li{
@@ -238,9 +253,13 @@ p{
   font-weight: bold;
   border:solid 3px;
   border-color:#92A8D1;
-  border-radius:15%;
+  border-radius:20%;
   padding:5%;
   margin:10%;
+  -webkit-border-radius:20%;
+  -moz-border-radius:20%;
+  -ms-border-radius:20%;
+  -o-border-radius:20%;
 } 
 
 img{
@@ -473,6 +492,14 @@ article{
 
 .AquamarineBlue{
   background-color: #7FFFD4;
+}
+
+.PaleGold{
+  background-color:#E6BE8A;
+}
+
+.Gold{
+  background-color:gold;
 }
 
 .blogDiv{
