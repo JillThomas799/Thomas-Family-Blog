@@ -1809,7 +1809,7 @@ Add some clouds:*/
   justify-content:space-around;
   color:white;
   font-weight:bold;
-  width:100vw;
+  width:100%;
   background-color:#64696c;
   margin-top:10%;
    
@@ -2144,7 +2144,7 @@ Add some clouds:*/
       justify-content:center;
       color:white;
       font-weight:bold;
-      width:100vw;
+      width:100%;
       background-color:#71797E;
     }   
     
