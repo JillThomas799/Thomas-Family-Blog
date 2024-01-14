@@ -1838,6 +1838,7 @@ Add some clouds:*/
   text-decoration: none;
   text-decoration: underline;
   -moz-text-decoration: none; 
+  padding:10%;
 }
 
 #sendFeedback{
@@ -1856,7 +1857,7 @@ Add some clouds:*/
 }
 
 .feedbackLabel{
-  margin:5%
+  margin:5%;
 }
 
 /*@MEDIA QUERIES*/
