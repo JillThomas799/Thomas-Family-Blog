@@ -300,6 +300,31 @@ img:hover{
   -o-transform: scale(2.50);
 }
 
+/*styling for elements of image as link*/
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text{
+  position: absolute;
+  top: 50%; 
+  left: 70%; 
+  transform: translate(-50%, -50%); 
+  background-color: #000000; 
+  color: #ffd200; 
+  padding: 5px 10px; 
+  font-size: 15px; 
+  text-align: center;
+}
+
 a{
   color:navy;
   text-decoration: none;
@@ -1958,6 +1983,23 @@ Add some clouds:*/
   flex-direction:column;
   align-items:center;
   justify-content:space-between;
+}
+
+/*On screens that are 600px wide or less, ensure overlay-text does not exceed container size*/
+.overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: #ffd200;
+  padding: 5px 10px;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 }
 
