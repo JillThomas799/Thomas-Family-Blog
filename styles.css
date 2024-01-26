@@ -203,7 +203,8 @@ h2{
 #menu ul{
   display:flex;
   flex-direction: row;
-  width:100%;
+  flex-wrap: wrap;
+  width:contain;
 }
 
 #menu li{
@@ -355,7 +356,6 @@ a:active {
 }
 
 #myDiv{
-  /*display:inline;*/
   width: contain;
   height: contain;
   visibility:hidden;
