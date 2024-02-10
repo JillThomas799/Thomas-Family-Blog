@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,56 +8,232 @@
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="styles\main.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <title>February 2024</title>
 </head>
-<body class="midnightblue">
-    <button id="button" title="Click here to open dropdown menu" onclick="myFunction()"><span id="menuUnderline">Menu</span></button>
-    <div id="myDiv">
-        <ul>
-            <li><a class = "button" href = "index.html#button" title = "Click here to return to menu button "><span class="text">Menu:</span></a></li>
-            <li><a class = "About-us" href = "index.html#about_us" title = "Click here to find out more about us "><span class="text">About us</span></a></li>
-            <li><a class="Members" href = "index.html#Members" title = "Click here to go to find out more about the individual family members"><span class="text">Members</span></a></li>
-            <!-- <br>
-            <br> -->
-            <li><div class="text_left_align" >Choose month/event:</div></li>
-        </ul>
-                <div id="menu">
-                    <ul>
-                            <li><a class="nav-link" href = "April_2023.html"  title = "Click here to go to April 2023 blogs">April 2023</a></li>
-                            <li><a class="nav-link" href = "May_2023.html"  title = "Click here to go to May 2023 blogs">May 2023</a></li>
-                            <li><a class="nav-link" href = "June_2023.html" id="menu" title = "Click here to go to June 2023 blogs">June 2023</a></li>
-                            <li><a class="nav-link" href = "Auvergne_holiday.html" id="menu" title = "Click here to go to Auvergne holiday, June 2023">Auvergne holiday</a></li>
-                            <li><a class="nav-link" href = "July_2023.html" id="menu" title = "Click here to go to July 2023 blogs">July 2023</a></li>
-                            <li><a class="nav-link" href = "August_2023.html" id="menu" title = "Click here to go to August 2023 blogs">August 2023</a></li>
-                            <li><a class="nav-link" href = "September_2023.html" id="menu" title = "Click here to go to September 2023 blogs">September 2023</a></li>
-                            <li><a class="nav-link" href = "October_2023.html" id="menu" title = "Click here to go to October 2023 blogs">October 2023</a></li>
-                            <li><a class="nav-link" href=  "Wales_holiday_2023.html" id="menu" title = "Click here to go to Wales holiday, October 2023">Wales holiday October 2023</a></li>
-                            <li><a class="nav-link" href = "November_2023.html" id="menu" title = "Click here to go to November 2023 blogs">November 2023</a></li>
-                            <li><a class="nav-link" href = "December_2023.html" id="menu" title = "Click here to go to December 2023 blogs">December 2023</a></li>
-                    </ul>
-                </div>
-   
-                <script>
-                    function myFunction() {
-                    var x = document.getElementById("myDiv");
-                    if (x.style.visibility === 'hidden') {
-                        x.style.visibility = 'visible';
-                    } else {
-                        x.style.visibility = 'hidden';
-                    }
-                    }        
-                </script>
-    </div>
 
-<svg class="February_2024_header">
-        <g class="February_2024_header" 
+    <body class="wintergray">
+        <div class="February2024_header" > <!--Opening tag for February header-->
+            <button id="button" title="Click here to open dropdown menu" onclick="myFunction()" ><span id="menuUnderline">Menu</span></button>
+            <div id="myDiv" style="z-index:7;">
+                <ul>
+                    <li><a class = "button" href = "index.html#button" title = "Click here to return to menu button "><span class="text">Menu:</span></a></li>
+                    <li><a class = "About-us" href = "index.html#about_us" title = "Click here to find out more about us "><span class="text">About us</span></a></li>
+                    <li><a class="Members" href = "index.html#Members" title = "Click here to go to find out more about the individual family members"><span class="text">Members</span></a></li>
+                    <li><div class="text_left_align" >Choose month/event:</div></li>
+                </ul>
+                        <div id="menu">
+                            <ul>
+                                    <li><a class="nav-link" href = "April_2023.html"  title = "Click here to go to April 2023 blogs">April 2023</a></li>
+                                    <li><a class="nav-link" href = "May_2023.html"  title = "Click here to go to May 2023 blogs">May 2023</a></li>
+                                    <li><a class="nav-link" href = "June_2023.html" id="menu" title = "Click here to go to June 2023 blogs">June 2023</a></li>
+                                    <li><a class="nav-link" href = "Auvergne_holiday.html" id="menu" title = "Click here to go to Auvergne holiday, June 2023">Auvergne holiday</a></li>
+                                    <li><a class="nav-link" href = "July_2023.html" id="menu" title = "Click here to go to July 2023 blogs">July 2023</a></li>
+                                    <li><a class="nav-link" href = "August_2023.html" id="menu" title = "Click here to go to August 2023 blogs">August 2023</a></li>
+                                    <li><a class="nav-link" href = "September_2023.html" id="menu" title = "Click here to go to September 2023 blogs">September 2023</a></li>
+                                    <li><a class="nav-link" href = "October_2023.html" id="menu" title = "Click here to go to October 2023 blogs">October 2023</a></li>
+                                    <li><a class="nav-link" href=  "Wales_holiday_2023.html" id="menu" title = "Click here to go to Wales holiday, October 2023">Wales holiday October 2023</a></li>
+                                    <li><a class="nav-link" href = "November_2023.html" id="menu" title = "Click here to go to November 2023 blogs">November 2023</a></li>
+                                    <li><a class="nav-link" href = "December_2023.html" id="menu" title = "Click here to go to December 2023 blogs">December 2023</a></li>
+                                    <li><a class="nav-link" href = "January_2024.html" id="menu" title = "Click here to go to January 2024 blogs">January 2024</a></li>
+                                    <li><a class="nav-link" href = "February_2024.html" id="menu" title = "Click here to go to February 2024 blogs">February 2024</a></li>
+                            </ul>
+                        </div> <!--closing tag menu div-->
+
+                        <script type="text/javascript" src="script.js"></script>
+            </div> <!-- closing tag myDiv-->
+
+            <!--snowfall animation-->
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+<div class="raindrop"></div>
+
+    
+
+
+
+            <div style="margin-bottom: 10%;">
+                <img src="resources\images\IMG-20240210-WA0000~2.jpg" alt="Photo of Wilf and Nell" style="width:50%; height:50%; border: black 2px solid; border-radius: 20%;">
+                <h2><strong style="color:white; font-size:1.25em; margin-bottom:5px;">February 2024</strong></h2>
+            </div>
+           </div> <!--Closing tag February2024_header -->   
+
+           <div class="datenewsDiv" style="top:2%;">
+            <section class = "date" style="background-color:#64696c;" ><strong>1st - 28th February 2024</strong></section>
+            <section class = "news" style="background-color:#64696c"><strong color="white">Welcome to our February blog. This month we welcome our two star guests,
+              our friends Robin and Cathy's dogs Wilf (<em>the smaller dog on the right of the photo</em>) and Nell  (<em>the larger dog on the left of the photo</em>) , who accompanied us on our walk at Ambleside this month, so we have given Wilf and Nell star places
+              in this month's blog.  
+              <br>
+              <br>
+              To reflect the fact we have still been having some snow showers, we have stayed with the snow 
+              theme, albeit with a lighter fall. However, the snowman unfortunately has melted... 
+              <br>
+              <br>
+              Do not worry though, Lennie has not been entirely left out, he has made an appearance in animated form at the bottom of the page...
+            </strong> 
+            </section>   
+    </div>  
+        <div class="datenewsDivNovember">
+          <section class = "dateNovember"><strong>Saturday, February 3rd 2024</strong></section>
+          <section class = "newsNovember"><strong color="white">Ikea Pax wardrobe arrives and is constructed at Elena's</strong>
+            <br>
+            <br>
+            Today the Ikea construction team turned up promptly at 8am to construct her PAX wardrobe, which had arrived the previous day
+            in flat pack format. The team consisted of one man with a staple gun and some efficient power tools and within 2 hours the wardrobe was constructed
+            and safely attached to the wall as per the pictures below. We have decided IKEA are on to a very good marketing strategy offering this service....
+          </section>
+      </div> 
+        <div class="blogPhotoDivNovember">
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_103508.jpg" alt="Photo of constructed IKEA PAX wardrobe"><figcaption><strong style="color:white;">Ikea PAX wardrobe, fully constructed <br> in just 2 hours</strong></figcaption></section>
+            </fig>
+            <fig><section class = "blogPhoto" ><img src="resources\images\media_20240206_105851_87305385964633182.jpg" alt="Photo of new blanket box"><figcaption><strong style="color:white;">Enough room also for <br> a new blanket box</strong></figcaption></section>
+            </fig> 
+            <fig><section class = "blogPhoto" ><img src="resources\images\media_20240206_105851_3603600823607782099.jpg" alt="Photo of Ikea PAX wardrobe and blanket box"><figcaption><strong style="color:white;">Ikea PAX wardrobe and the <br> new blanket box</strong></figcaption></section>
+            </fig>                
+  
+            <!-- <fig><section class = "blogPhoto" ><img src="" alt=""><figcaption><strong style="color:white;"></strong></figcaption></section>
+            </fig> -->
+          </div> 
+        
+        <div class="datenewsDivNovember">
+            <section class = "dateNovember"><strong>Sunday, February 4th 2024</strong></section>
+            <section class = "newsNovember"><strong color="white">Trip to Acorn Bank </strong>
+              <br>
+              <br>
+            Trip to <a href="https://www.nationaltrust.org.uk/visit/lake-district/acorn-bank" target="_blank" title="Click here to find more about Acorn Bank">Acorn Bank</a>, which is owned by the National Trust and particularly known for 
+            its herbs and fruit orchards.
+            It is not usually open before Easter, so we were pleased to discover that the National Trust works closely with the local village of <a href="https://www.visitcumbria.com/evnp/culgaith/"
+            target="blank" title="Click here to discover more about Culgaith">Culgaith</a>, whose residents had asked whether the National Trust would consider opening the property earlier than 
+            usual so they could see the snow drops in the grounds, which are very pretty at the moment.
+            <br>
+            <br>
+            It was an excellent opportunity for Elena to sign up for National Trust membership, which once the annual membership is paid, allows her to access
+            National Trust properties in England, Wales, Northern Ireland and Scotland and also to obtain free parking on the many National Trust car parks in Cumbria, especially in the Lake District National Park.
+              <br>
+              <br>
+              The snow drops were proving quite popular as there were quite a lot of people there. The beds of snow drops were lovely and whilst some areas of the site were
+              inaccessible as a result of the recent poor weather eg. the mill was closed off and the more extended walk to the village via the fields was inaccessible due to thick mud,
+              otherwise everything was fine. The National Trust had wisely opened the outdoor refreshment stall, and even better had opened the indoor café seating
+              area to sit inside out of the cold. Once in the café, Bernard was trying maintain his diet, but kept trying to take some of Elena's gingerbread!
+            </section>
+        </div>          
+
+        
+        <div class="blogPhotoDivNovember">
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_120240.jpg" alt="Photo of entry sign, Acorn Bank"><figcaption><strong style="color:white;">Arriving at Acorn Bank <br> to see the snowdrops...</strong></figcaption></section>
+            </fig> 
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_121438.jpg" alt="Photo of Bernard and Elena "><figcaption><strong style="color:white;">Weather very windy and cold, <br> so Bernard in particular <br> is well prepared</strong></figcaption></section>
+            </fig>                
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_123123.jpg" alt="Photo of the rapids"><figcaption><strong style="color:white;">The rapids at Acorn Bank...</strong></figcaption></section>
+            </fig>
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_123338.jpg" alt="Photo of wet mud"><figcaption><strong style="color:white;">Wet mud was preventing access to the walk <br> which takes you to the nearby <br> village</strong></figcaption></section>
+            </fig>
+          </div> 
+
+          <div class="blogPhotoDivNovember">
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_123517.jpg" alt="Photos of woodland snowdrops"><figcaption><strong style="color:white;">However, all the snowdrops in the <br> woodland were lovely...</strong></figcaption></section>
+            </fig> 
+            <fig><section class = "blogPhoto" ><img src="resources\images\WhatsApp Image 2024-02-05 at 16.38.31_71e8875d.jpg" alt="Photo of Jill and Elena and the snowdrops at Acorn Bank"><figcaption><strong style="color:white;">Jill and Elena and <br> the snowdrops at Acorn Bank</strong></figcaption></section>
+            </fig>                
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_125218.jpg" alt="Photo of the herb garden, Acorn Bank"><figcaption><strong style="color:white;">Herb Garden, Acorn Bank</strong></figcaption></section>
+            </fig>
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240204_130559.jpg" alt="Photo of Bernard, trying to steal some of Elena's gingerbread, Acorn Bank"><figcaption>...Spot Bernard, trying to steal some of <br> Elena's gingerbread at the café<strong style="color:white;"></strong></figcaption></section>
+            </fig>
+          </div> 
+
+          <div class="datenewsDivNovember">
+            <section class = "dateNovember"><strong>Wednesday, February 7th 2024</strong></section>
+            <section class = "newsNovember"><strong color="white">Trip over to Ambleside to meet up with friends </strong>
+              <br>
+              <br>
+              It was great today to meet up in Ambleside with some university friends whom we have known for many years. We went on a lovely walk from Ambleside, initially passing
+              the memorial of flowers and tributes left to <a href="https://cumbriacrack.com/2024/02/02/fundraiser-launched-to-create-statue-of-beloved-lake-district-cat/" target="blank" title="Click here to read more about Riley"><em>Riley</em></a> 
+            , a well-known Ambleside cat who died on the 23rd January 2024 when he was hit by a car. A fund has been set up to create a bronze statue of him. We started off in the centre of town and headed
+            initially across the park before picking up the bridle way towards Loughrigg Fell just before Brow Head Farm. Following the climb up around Miller Brow and beyond, we then dropped down the back of Loughrigg
+            until we reached the very scenic Loughrigg Tarn, with a superb view of the Langdale Pikes behind.
+            <br>
+            <br>
+            After skirting around the tarn, we took a left turn on meeting the road again to drop down into Skelwith Bridge and a well-earned break at Chester's café, before returning on a small back-road to Ambleside to complete the 9 mile walk.
+          </section>
+          </div>
+        
+          <div class="blogPhotoDivNovember">
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_131014.jpg" alt="Photo of memorial tribute to Riley the cat"><figcaption><strong style="color:white;">Memorial to <a href="https://cumbriacrack.com/2024/02/02/fundraiser-launched-to-create-statue-of-beloved-lake-district-cat/" target="blank" title="Click here to read more about Riley"><em>Riley</em></a> 
+              , the popular Ambleside <br> cat,  who died on the 23rd January 2024 <br> after being hit by a car.</strong></figcaption></section>
+            </fig> 
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_135000.jpg" alt=""><figcaption><strong style="color:white;">The weather closing in ahead as <br> we descend down the <br> back of Loughrigg</strong></figcaption></section>
+            </fig>                
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_135813~2-EDIT.jpg" alt=""><figcaption><strong style="color:white;">...but it soon lifts, and there is a <br> glorious view of the Langdale <br> Pikes ahead.</strong></figcaption></section>
+            </fig>
+          </div> 
+
+          <div class="blogPhotoDivNovember">
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_135813~2-EDIT(1) - Copy.jpg" alt="Photo of Cathy, Wilf and Nell"><figcaption><strong style="color:white;">Cathy, with the stars of the show...<br> Wilf and Nell, enjoying the walk.</strong></figcaption></section>
+            </fig>
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_135813~2-EDIT(1).jpg" alt="Photo of Cathy, Wilf and Nell in close up"><figcaption><strong style="color:white;">...and in close up...</strong></figcaption></section>
+            </fig> 
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG-20240207-WA0000.jpg" alt="Photo of Bernard and Jill on walk"><figcaption><strong style="color:white;">Bernard and Jill enjoying the walk</strong></figcaption></section>
+            </fig>
+          </div> 
+
+          <div class="blogPhotoDivNovember">
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_141456.jpg" alt="Photo of Loughrigg Tarn"><figcaption><strong style="color:white;">...Then the very scenic <br> Loughrigg Tarn comes into sight.</strong></figcaption></section>
+            </fig>                
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_144128.jpg" alt="Photo of traditional Lakeland cottage"><figcaption><strong style="color:white;">..Passing traditional lakeland cottages...</strong></figcaption></section>
+            </fig>
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_152245.jpg" alt="Photo of Bernard at Chester's café"><figcaption><strong style="color:white;">Bernard enjoying his well-earned coffee at <br> Chester's café by the river <br> at Skelwith Bridge</strong></figcaption></section>
+            </fig> 
+            <fig><section class = "blogPhoto" ><img src="resources\images\IMG_20240207_155024.jpg" alt="Photo of the Langdale Pikes from the return route "><figcaption><strong style="color:white;">Looking back to <br> the Langdale Pikes <br> on the return route</strong></figcaption></section>
+            </fig>  
+          </div> 
+
+          <!-- <div class="blogPhotoDivNovember">
+            <fig><section class = "blogPhoto" ><img src="" alt=""><figcaption><strong style="color:white;"></strong></figcaption></section>
+            </fig> 
+            <fig><section class = "blogPhoto" ><img src="" alt=""><figcaption><strong style="color:white;"></strong></figcaption></section>
+            </fig>                
+            <fig><section class = "blogPhoto" ><img src="" alt=""><figcaption><strong style="color:white;"></strong></figcaption></section>
+            </fig>
+            <fig><section class = "blogPhoto" ><img src="" alt=""><figcaption><strong style="color:white;"></strong></figcaption></section>
+            </fig>
+          </div>  -->
+
+          <section class = "dateNovember"><strong></strong> 
+                  
+    <svg class="LennieImage_February_2024">
+        <g class="LennieImage_February_2024" 
+
+        
+   
+        <g>
         xmlns="http://www.w3.org/2000/svg"  
         xmlns:xlink="http://www.w3.org/1999/xlink">
         </g>
         version="1.1" x="0" y="0" width="100vw" height="75vh">
              
-        <text class="heavy" style="fill:white">February 2024</text>
+
         <g stroke="black" stroke-width="0.55" opacity="0.9">
                 
                 <defs>
@@ -139,9 +316,33 @@
                      <line id="mouthnasal" x1="263.5" y1="287" x2="263.5" y2="291" stroke="#5c4033" stroke-width="1.5" opacity="0.6" />
                      <line id="mouthright" x1="257.5" y1="292" x2="263.5" y2="293" stroke="#5c4033" stroke-width="1.5" opacity="0.7" />
                      <line id="mouthleft" x1="263.5" y1="293" x2="269.5" y2="292" stroke="#5c4033" stroke-width="1.5" opacity="0.7" />
+                     <rect id="mouthtongue" x="260.4" y="291.5" width="9.5" height="11" rx="5" ry="5" fill="#F19E93" stroke="black" stroke-width="0.5"/>
                     </g>;
+        </g>
 </svg>
-        
-   
+</section> 
+</div> <!--Closing tag February2024_header div--->
+
+<footer class="footer">
+<ul><li class="sendFeedback">
+    <button class="buttonFooter" id="problemfeedback"><a href="https://forms.gle/DFrwNqE4mH28M3LY6" target="_blank" title="Please complete and submit this form if this website is not displaying correctly on your device">Problem Feedback Form </a></button>
+</li>
+</ul>
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $(".blogDivNovember").css("background-color", "black");
+        $(".datenewsDivNovember").css("background-color", "#64696c");  
+        $(".newsNovember").css("background-color", "#64696c");  
+        $(".dateNovember").css("background-color", "black") 
+        $(".blogPhotoDivNovember").css("background-color", "#64696c"); 
+        // $("a").css("color","#ffd200");
+        $(".footer").css("background-color", "black");
+    
+      });
+</script>
+
 </body>
 </html>
+

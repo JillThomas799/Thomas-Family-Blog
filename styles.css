@@ -1285,7 +1285,6 @@ Add some clouds:*/
 .January2024_header{
   background: linear-gradient(180deg,rgb(36,60,62) 65%,#F2F3F5, snow );
   height:70vh;
-  /*--nowidthpropertyrequired,allowingthewidthtoautosetonwhateverdevice*/
   border:solid black 2px;
   position:relative;
   border-radius:16%;
@@ -1295,12 +1294,12 @@ Add some clouds:*/
   -o-border-radius:16%;
 }
 
-.January_2024_title{
+.January_2024_title, .February_2024_title{
   color:white;
   font-weight: bold;
   font-size: 34px;
   background-color: inherit;
-  border: 0;    /*Removes border which is around the h1 element on other blog pages as not required here*/
+  border: 0;    Removes border which is around the h1 element on other blog pages as not required here
   margin:auto;   /*Centres the h1 title horizontally*/
   position:relative;
   top:30%;
@@ -1806,19 +1805,22 @@ Add some clouds:*/
   to{height:0px;}
 }
 
+/*FEBRUARY 2024*/
 /*FEBRUARY 2024 HEADER*/
-.February_2024_header{
-  width:100vw;
-  height:75vh;
-  box-sizing:border-box;
-  text-align: center;
+.February2024_header{
+  width:100%;
+  height:100%;
   background:#73a3c1;
   border: solid black 2px;
-  border-radius:20%;
-  -webkit-border-radius:20%;
-  -moz-border-radius:20%;
-  -ms-border-radius:20%;
-  -o-border-radius:20%;
+  margin-bottom: 5%;
+  /* overflow:auto; */
+}
+
+.LennieImage_February_2024{     /*Header for SVG element*/
+  width:100vw;
+  height:70vh;
+  top:auto;
+  bottom:auto;
 }
 
 /*Sets a class for bold large titles for headers in svg elements*/
@@ -1985,7 +1987,7 @@ Add some clouds:*/
   justify-content:space-between;
 }
 
-/*On screens that are 600px wide or less, ensure overlay-text does not exceed container size*/
+/*On screens that are 600px wide or less, ensure overlay-text and button does not exceed container size*/
 .overlay-text{
   position: absolute;
   top: 50%;
@@ -2001,14 +2003,38 @@ Add some clouds:*/
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+
+#button{
+  display:block;
+  position:absolute;
+  height:50px;
+  width:20%;
+  background-color:gray;
+  border:black 2px solid;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color:white;
+  margin:5% 55% 5% 45%;
+  border-radius:15%;
+  -webkit-border-radius:15%;
+  -moz-border-radius:15%;
+  -ms-border-radius:15%;
+  -o-border-radius:15%;
+} 
+
 }
 
-/* On screens that are 900px wide or less
+/*On screens that are 900px wide or less*/
 @media screen and (max-width: 900px){
-  .January_2024_title{
-  margin-left:25vw;
-  top:30%;
-} */
+ .February2024_header{
+  width:100%;
+  height:100%;
+  background:#73a3c1;
+  border: solid black 2px;
+  overflow:auto;
+} 
+} 
 
 
 /* On screens that are 1200px wide or less, enlarge Thomas Family photo home page */
@@ -2099,7 +2125,7 @@ Add some clouds:*/
       bottom:30%;
       }
   
-      .January_2024_title{
+      .January_2024_title, .February_2024_title{
         color:white;
         font-weight: bold;
         font-size: 34px;
