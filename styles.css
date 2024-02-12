@@ -1816,7 +1816,8 @@ Add some clouds:*/
   /* overflow:auto; */
 }
 
-.LennieImage_February_2024{     /*Header for SVG element*/
+.LennieImage_February_2024{  
+  position:relative;   /*Header for SVG element*/
   width:100vw;
   height:70vh;
   top:auto;
@@ -2227,6 +2228,18 @@ Add some clouds:*/
     }
     
       
+    }
+
+    /*On screens that are 600px wide or less, ensure Lennie Footer animation and blanket does not overrun*/
+    @media screen and (max-width: 600px){
+      .LennieImage_February_2024{
+        transform:scale(47%);
+        -webkit-transform:scale(47%);
+        -moz-transform:scale(47%);
+        -ms-transform:scale(47%);
+        -o-transform:scale(47%);
+        height:40vh;
+}
     }
    
   
