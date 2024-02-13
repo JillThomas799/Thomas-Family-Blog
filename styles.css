@@ -2233,12 +2233,15 @@ Add some clouds:*/
     /*On screens that are 600px wide or less, ensure Lennie Footer animation and blanket does not overrun*/
     @media screen and (max-width: 600px){
       .LennieImage_February_2024{
-        transform:scale(37%);
-        -webkit-transform:scale(37%);
-        -moz-transform:scale(37%);
-        -ms-transform:scale(37%);
-        -o-transform:scale(37%);
+        transform:scale(40%);
+        -webkit-transform:scale(40%);
+        -moz-transform:scale(40%);
+        -ms-transform:scale(40%);
+        -o-transform:scale(40%);
         height:60vh;
+        align-items:center;
+        justify-content: center;
+        width:100%;
 }
     }
    
