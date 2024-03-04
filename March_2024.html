@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="styles\main.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>March 2024</title>
+</head>
+
+<body class="SpringGreen">
+    <div class="March2024_header"> <!--Opening tag for March header-->
+        <button id="button" title="Click here to open dropdown menu" onclick="myFunction()" style= "background-color: #ff6767;border-color: #86B251;" ><span id="menuUnderline">Menu</span></button>
+        <div id="myDiv" >
+            <ul>
+                <li><a class = "button" href = "index.html#button" title = "Click here to return to menu button "><span class="text">Menu:</span></a></li>
+                <li><a class = "About-us" href = "index.html#about_us" title = "Click here to find out more about us "><span class="text">About us</span></a></li>
+                <li><a class="Members" href = "index.html#Members" title = "Click here to go to find out more about the individual family members"><span class="text">Members</span></a></li>
+                <li><div class="text_left_align" >Choose month/event:</div></li>
+            </ul>
+                    <div id="menu">
+                        <ul>
+                                <li><a class="nav-link" href = "April_2023.html"  title = "Click here to go to April 2023 blogs">April 2023</a></li>
+                                <li><a class="nav-link" href = "May_2023.html"  title = "Click here to go to May 2023 blogs">May 2023</a></li>
+                                <li><a class="nav-link" href = "June_2023.html" id="menu" title = "Click here to go to June 2023 blogs">June 2023</a></li>
+                                <li><a class="nav-link" href = "Auvergne_holiday.html" id="menu" title = "Click here to go to Auvergne holiday, June 2023">Auvergne holiday</a></li>
+                                <li><a class="nav-link" href = "July_2023.html" id="menu" title = "Click here to go to July 2023 blogs">July 2023</a></li>
+                                <li><a class="nav-link" href = "August_2023.html" id="menu" title = "Click here to go to August 2023 blogs">August 2023</a></li>
+                                <li><a class="nav-link" href = "September_2023.html" id="menu" title = "Click here to go to September 2023 blogs">September 2023</a></li>
+                                <li><a class="nav-link" href = "October_2023.html" id="menu" title = "Click here to go to October 2023 blogs">October 2023</a></li>
+                                <li><a class="nav-link" href=  "Wales_holiday_2023.html" id="menu" title = "Click here to go to Wales holiday, October 2023">Wales holiday October 2023</a></li>
+                                <li><a class="nav-link" href = "November_2023.html" id="menu" title = "Click here to go to November 2023 blogs">November 2023</a></li>
+                                <li><a class="nav-link" href = "December_2023.html" id="menu" title = "Click here to go to December 2023 blogs">December 2023</a></li>
+                                <li><a class="nav-link" href = "January_2024.html" id="menu" title = "Click here to go to January 2024 blogs">January 2024</a></li>
+                                <li><a class="nav-link" href = "February_2024.html" id="menu" title = "Click here to go to February 2024 blogs">February 2024</a></li>
+                                <li><a class="nav-link" href = "March_2024.html" id="menu" title = "Click here to go to March 2024 blogs">March 2024</a></li>
+                        </ul>
+                    </div>
+       
+                    <script type="text/javascript" src="script.js"></script>
+            </div> <!-- closing tag myDiv-->
+           
+<!--             
+                <div class="SpringSun"></div> -->
+                <div class="March2024_title">March 2024</div> 
+
+                <svg version="1.1" x="-200" y="0" height="600" width="1600" viewbox="0 0 900 800" id="svgMarchHeader">
+                    <defs>
+                <filter id="filterCloud" x="0" y="0">
+                    <feGaussianBlur stdDeviation=".4"/>
+                </filter>
+
+                <radialGradient id="gradSpringSun" cx="50%" cy="60%" r="50%" fx="50%" fy="80%">
+                    <stop offset="0%" style="stop-color:rgb(255,245,147);stop-opacity:1" />  
+                    <stop offset="100%" style="stop-color:rgba(246,240,163,0.7);stop-opacity:1" />
+                  </radialGradient>
+            </defs>
+
+            <style>
+                @media screen and (max-width: 600px) {
+                  #svgMarchHeader{
+                       object-fit:contain;
+                       transform:translate(-29%);
+                    }
+
+                    #snowdrops1{
+                        transform:scaleX(60%) 
+                     }
+                    }
+
+                    @media screen and (min-width:601px) and (max-width: 1400px) {
+                        #svgMarchHeader{
+                            transform:translate(-25%, 18%);
+                         }
+
+                         #snowdrops1{
+                            transform:translate(0% ,15%)
+                         }
+
+                         }
+
+                        @media screen and (min-width:3000px) {
+
+        
+                            }
+               
+            </style>
+            
+<g class="SpringSun">
+height="200" width="200" id="SpringSun >
+<circle cx="100" cy="130" r="100" fill="url(#gradSpringSun)" />	
+</g>
+
+<g id="CloudsSpring1">   
+<!--First stormy cloud-->                
+<circle cx="100" cy="180" r="50" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="80" cy="220" r="40" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="40" cy="200" r="40" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="130" cy="225" r="30" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="170" cy="215" r="35" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="155" cy="165" r="25" fill=" 	#b0c1c9" filter="url(#filter)"/>
+
+<!--Second stormy cloud-->
+<circle cx="400" cy="100" r="50" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="380" cy="140" r="40" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="340" cy="120" r="40" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="430" cy="145" r="30" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="470" cy="135" r="35" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="455" cy="85" r="25" fill=" 	#b0c1c9" filter="url(#filter)"/>
+                
+<!--Third stormy cloud-->
+<circle cx="800" cy="80" r="50" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="780" cy="120" r="40" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="740" cy="100" r="40" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="830" cy="125" r="30" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="870" cy="115" r="35" fill=" 	#b0c1c9" filter="url(#filter)"/>
+<circle cx="855" cy="65" r="25" fill=" 	#b0c1c9" filter="url(#filter)"/>
+
+<!--Raindrops of 1st cloud -->
+<circle cx="50" cy="260" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="65" cy="290" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="80" cy="260" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>	
+<circle cx="100" cy="280" r="6" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="125" cy="260" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="145" cy="270" r="6" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+
+
+<!--Raindrops of 2nd cloud-->
+<circle cx="350" cy="190" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="380" cy="175" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>	
+<circle cx="400" cy="170" r="6" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="425" cy="185" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="450" cy="170" r="6" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>	
+<circle cx="490" cy="180" r="6" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+	
+
+<!--Raindrops of 3rd cloud-->
+<circle cx="730" cy="170" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="760" cy="145" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="780" cy="169" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>	
+<circle cx="800" cy="149" r="6" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="820" cy="152" r="8" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>
+<circle cx="840" cy="148" r="6" fill="rgb(74,74,74, 0.5)" filter="url(#filter)"/>	
+ 
+</g>
+
+<g id="CloudsSpring2"><use href="#CloudsSpring1" style="transform:translate(-1700px);"></use></g>
+
+<g id="CloudsSpring3"><use href="#CloudsSpring1" style="transform:translate(-600px);"></use></g>
+
+
+
+<svg id="snowdrops1">
+    <path id="leafpath1" d="M 500 600 Q 505 590 535 570" style="stroke: #3d860b; stroke-width:3; fill:transparent;" />
+    <ellipse id="snowdropleaf1" cx="535" cy="580" rx="5" ry="10" stroke= black fill="#f1f5fe"></ellipse>
+    <ellipse id="snowdropleaf2" cx="545" cy="580" rx="5" ry="12" stroke= black fill="#f1f5fe"></ellipse>
+    <ellipse id="snowdropleaf3" cx="540" cy="580" rx="5" ry="14" stroke= black fill="#f1f5fe"></ellipse>
+
+    <path id="leafpath4" d="M 500 600 Q 495 590 525 570" style="stroke: #3d860b; stroke-width:3; fill:transparent;" />
+    
+    <path id="leafpath2" d="M 500 600 Q 490 590 505 560" style="stroke: #3d860b; stroke-width:3; fill:transparent;" />
+    <ellipse id="snowdropleaf4" cx="505" cy="572" rx="5" ry="10" stroke= black fill="#f1f5fe"></ellipse>
+    <ellipse id="snowdropleaf5" cx="510" cy="572" rx="5" ry="12" stroke= black fill="#f1f5fe"></ellipse>
+    <ellipse id="snowdropleaf6" cx="500" cy="572" rx="5" ry="14" stroke= black fill="#f1f5fe"></ellipse>
+
+    <path id="leafpath3" d="M 500 600 Q 488 590 465 570" style="stroke: #3d860b; stroke-width:2; fill:transparent;" />
+    <ellipse id="snowdropleaf7" cx="465" cy="580" rx="5" ry="10" stroke= black fill="#f1f5fe"></ellipse>
+    <ellipse id="snowdropleaf9" cx="470" cy="580" rx="5" ry="14" stroke= black fill="#f1f5fe"></ellipse>
+    <ellipse id="snowdropleaf8" cx="475" cy="580" rx="5" ry="12" stroke= black fill="#f1f5fe"></ellipse>
+
+</svg>
+
+<svg id="snowdrops2" ><use href="#snowdrops1" style="transform:translate(300px, 30px);"></use></svg>
+<svg id="snowdrops3" ><use href="#snowdrops1" style="transform:translate(-100px, -40px);"></use></svg>
+<svg id="snowdrops4" ><use href="#snowdrops1" style="transform:translate(240px, 20px);"></use></svg>
+
+<svg id="snowdrops5" ><use href="#snowdrops1" style="transform:translate(-450px, -10px);"></use></svg></svg>
+<svg id="snowdrops6" ></svg>
+     
+</svg>
+      
+    </div> <!--Closing tag for March2024_header-->
+
+    <div class="datenewsDivNovember" style="top:2%;">
+        <section class = "dateNovember" style="background-color:#64696c;" ><strong>1st - 31st March 2024</strong></section>
+        <section class = "newsNovember" style="background-color:#64696c"><strong color="white">Welcome to our March blog. This month we 
+            have a spring colour theme and the appearance of the early Spring snowdrops which, although they look delicate, are 
+            remarkably hardy plants. The windy, changeable weather animation has been scripted from first principles. 
+            All the graphic designs this month have used scalable vector graphics including paths, which I really enjoy using 
+            as these give far more flexibility to create your own tailored design.
+          <br>
+          <br>
+          This will <em>(hopefully)</em> be the last month we will be running the blog on the usual web address, as next year's blog will have a new web address
+          which I will inform everyone of soon. I will also put an alert message on this site to redirect you when the time comes.
+          <br>
+          <br>
+          It has been good fun and a great start to run this as a static html/css site this year but there are better ways of building websites
+          which provide more functionality. One of these is <em>REACT</em> and this is used by the majority of web designers now.
+        </strong> 
+        </section>   
+</div>  
+
+    <footer class="footer">
+        <ul><li class="sendFeedback">
+            <button class="buttonFooter" id="problemfeedback"><a href="https://forms.gle/DFrwNqE4mH28M3LY6" target="_blank" title="Please complete and submit this form if this website is not displaying correctly on your device">Problem Feedback Form </a></button>
+        </li>
+        </ul>
+        </footer>
+
+        <script>
+            $(document).ready(function() {
+                $(".blogDivNovember").css("background-color", "black");
+                $(".datenewsDivNovember").css("background-color", "#86B251");   
+                $(".newsNovember").css("background-color", "#86B251");  
+                $(".dateNovember").css("background-color", "#5e8d5a") 
+                $(".blogPhotoDivNovember").css("background-color", "#86B251"); 
+                // $("a").css("color","#ffd200");
+                $(".footer").css("background-color", "#86B251");
+            
+              });
+        </script>
+
+</body>
+</html>

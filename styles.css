@@ -498,6 +498,8 @@ article{
   padding:20px;
 }
 
+/*COLOUR PALETTE SELECTION*/
+
 .navy{
   background-color: navy;
 }
@@ -525,6 +527,10 @@ article{
 
 .Gold{
   background-color:gold;
+}
+
+.SpringGreen{
+  background-color:	 #c9dc87;
 }
 
 .blogDiv{
@@ -1824,6 +1830,39 @@ Add some clouds:*/
   bottom:auto;
 }
 
+/*MARCH 2024*/
+
+.March2024_header{
+  background: linear-gradient(180deg,rgb(192,192,192) 0%, rgb(219,219,219) 60%, #c6d7b9 70%, #c6d7b9 90%);
+  height:70vh;
+  position:relative;
+  border:solid  	#86B251 4px;
+}
+
+.March2024_title{
+  font-weight:bold;
+  color:#ff6767;
+  font-size: 1.75rem;
+  position:absolute;
+  top:150px;
+  left:50%;
+}
+
+#CloudsSpring1 {
+  position:relative;
+  top: calc(50vh - 350px);
+  left: calc(0vw - 200px);
+  /*animation: fly 4s infinite alternate;
+  */-webkit-animation: fly 4s infinite alternate;
+  animation:  fly 7s infinite linear;
+  -webkit-animation:  fly 7s infinite linear;
+}
+
+@keyframes fly {
+	0% { transform: translateX(-1200px); -webkit-transform: translateX(-1200px); -moz-transform: translateX(-1200px); -ms-transform: translateX(-1200px); -o-transform: translateX(-1200px); }
+	100% { transform: translateX(3500px); -webkit-transform: translateX(3500px); -moz-transform: translateX(3500px); -ms-transform: translateX(3500px); -o-transform: translateX(3500px); }
+}
+
 /*Sets a class for bold large titles for headers in svg elements*/
 .heavy {
   font: bold 30px sans-serif;
@@ -1887,6 +1926,8 @@ Add some clouds:*/
 .feedbackLabel{
   margin:5%;
 }
+
+
 
 /*@MEDIA QUERIES*/
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other and enlarge Thomas Family photo home page */
