@@ -31,8 +31,8 @@ body{
   width:20%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 10%;
-  margin-bottom: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   /* pointer-events: none; */
   border:solid black 2px;
   border-radius:15%;
@@ -46,6 +46,20 @@ body{
 display: grid;
 place-items: center;
 }
+
+#closeButton{
+  display:block;
+  position:absolute;
+  height:auto;
+  width:22%;
+  background-color:white;
+  border:black 1px solid;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color:black;
+  margin:0% 30% 5% 70%;
+} 
 
 h1{
     display:block;

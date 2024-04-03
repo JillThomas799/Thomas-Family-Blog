@@ -50,6 +50,8 @@
             </div>
 
             <section id="RedirectionAlert" style="font-weight:900;">OUR WEBSITE HAS A NEW HOME
+                <button id="closeButton" title="Click here to close alert box" onclick = "closeRedirection()"><span style="font-weight:bold">Close</span></button>        
+                
                 <br />
                 <br />
                 It has moved to 
@@ -60,9 +62,21 @@
                 CLICK on LENNIE BELOW <br /> 
                 He will redirect you and show you the new site <br />
                 <a href="https://jillthomas799.github.io/thomasfamilyblog-2024-2025git/" target="_blank"><div id="redirectionContainerLennie"><img src= "resources\images\IMG_20221026_084637.jpg" id="redirectionLennie" alt="Photo of Lennie"></div></a>
-                Please bookmark the new website address in your favourites for further reference</section>
+                Please bookmark the new website address in your favourites for further reference.
+               
+                <script> 
+                    function closeRedirection() {
+                           var closeRed = document.getElementById("RedirectionAlert");
+                                closeRed.style.display = "none";
+                            }
+                           
+                   </script>
+                
+           
+           
+            </section>
 
-      
+           
             <section id="ThomasFamilyIntro">
                 <h1 id="The_Thomas_Family_Blog" style="background-color:#708090; color:white; border:solid #b5ddde 3px;">Thomas Family Blog</h1>
                 <fig>
